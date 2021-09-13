@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import "bootstrap/dist/css/bootstrap.css";
+/* @import "bootstrap-icons/font/bootstrap-icons.css"; */
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Padauk',Roboto, "Helvetica Neue", sans-serif; }
+/* styles.css */
+html, body, app-root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float:left;
+    font-family: 'Padauk';
+  }
+  body {
+    overflow: hidden;
+    margin:0;
+  }
+  .tooltip1{
+    background-color: rgb(255, 128, 128);
+    color: black;
+    border-radius: 0.25em;
+    padding: 0.75em;
+    display: block;
+    z-index: 2;
+    font-size: small;
+    /*
+    height: fit-content;
+    width: fit-content;
+    position: absolute; */
+    position: relative !important; 
+    right: 30px !important;
+    white-space: pre-line;
+}
+.tooltip12{
+  background-color: rgb(128, 151, 255);
+  color: black;
+  border-radius: 0.25em;
+  padding: 0.75em;
+  display: block;
+  z-index: 2;
+  font-size: small;
+  /*
+  height: fit-content;
+  width: fit-content;
+  position: absolute; */
+  position: relative !important; 
+  right: 30px !important;
+  white-space: pre-line;
+}
+.tooltip-pd {
+  position:relative;
+  padding: 0.738rem 1.113rem;
+  color: yellow !important;
+  margin-bottom: 5px;
+  white-space: pre-line;
+  width: 250px;
+  height: auto;
+  font-size: 0.9rem;
+  background: rgb(235, 16, 16);;
+  border-radius: 7px;
+  margin-bottom: 3px;
+  /* left: -200px !important; */
+  /* bottom: -10px !important; */
+  border: 2px solid blue;
+  font-family: 'Padauk';
+}
+.tooltip-pd:hover:before {
+    content: attr(title);
+    position:relative;
+    bottom:70px;
+    /* right: 500px; */
+    left:20%;
+    z-index:999;
+    width: 320px;
+    height: 320px;
+    border-style: solid;
+    border-width: 15px 13px 0 13px;
+    border-color: rgba(37, 36, 36, 0.9) transparent transparent transparent;
+}
+.tooltip-pd1{
+  position:absolute;
+  padding: 0.738rem 1.113rem;
+  color: yellow !important;
+  margin-bottom: 5px;
+  white-space: pre-line;
+  width: 250px;
+  height: auto;
+  font-size: 0.9rem;
+  background: rgb(235, 16, 16);;
+  border-radius: 7px;
+  margin-bottom: 7px;
+  /* left: -200px !important;
+  bottom: -10px !important; */
+  border: 2px solid blue;
+}

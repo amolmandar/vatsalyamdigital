@@ -1,0 +1,750 @@
+
+<!--
+<p>page works!</p>
+
+ app/page/page.component.html -->
+ <div>
+<img matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+matTooltipHideDelay="400" matTooltip="You don’t have to be biological mother to mother a child."
+matTooltipPosition="above" title="javsnagpur@gmail.com"
+
+class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
+</div>
+<div class="t" fxLayout="" fxLayoutWrap fxLayout.xs="column" fxLayoutGap.xs="20px" 
+    
+
+    >
+    
+    <mat-card class="flex-container" fxFlex="79%" *ngIf="!this.getIsM()" >
+        <mat-card-header>
+            <mat-card-title>
+                <h2><span class="bnk"> Vatsalyam Summary </span></h2>
+            </mat-card-title>
+            <mat-card-subtitle>
+    
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="">
+            
+            <ul class="nav nav-pills vatbox">
+                <li [class.active]="viewMode=='2015'"  class="nav-link active">
+                    <a  (click)="viewMode='2015'">
+                        <span matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+                        matTooltipHideDelay="400"
+                        matTooltip="First Year (2016-17) of Vatsalyam.
+                        Total beneficiaries 13." 
+                        matTooltipPosition="above" title="javsnagpur@gmail.com"
+                        class="vat">Year1</span></a>
+                </li>
+                <li [class.active]="viewMode=='2016'"  class="nav-link">
+                    <a  (click)="viewMode='2016'">
+                        <span matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+                        matTooltipHideDelay="400"
+                        matTooltip="Second Year of Vatsalyam (2017-18). 
+                        Total beneficiaries 10." title="javsnagpur@gmail.com"
+                        matTooltipPosition="above"
+                        class="vat">Year2</span></a>
+                </li>
+                <li [class.active]="viewMode=='2017'"  class="nav-link">
+                    <a  (click)="viewMode='2017'">
+                        <span matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+                        matTooltipHideDelay="400"
+                        matTooltip="Third Year of Vatsalyam (2018-19). 
+                        Total beneficiaries 18." title="javsnagpur@gmail.com"
+                        matTooltipPosition="above"
+                        class="vat">Year3</span></a>
+                </li>
+                <li [class.active]="viewMode=='2018'"  class="nav-link">
+                    <a  (click)="viewMode='2018'">
+                        <span matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+                        matTooltipHideDelay="400"
+                        matTooltip="Fourth Year of Vatsalyam (2019-20).
+                        Total beneficiaries 21." title="javsnagpur@gmail.com"
+                        matTooltipPosition="above"
+                        class="vat">Year4</span></a>
+                </li>
+                <li [class.active]="viewMode=='2019'"  class="nav-link">
+                    <a  (click)="viewMode='2019'">
+                        <span matTooltipClass="tooltip-pd" matTooltipShowDelay="100"
+                        matTooltipHideDelay="400"
+                        matTooltip="Fifth Year of Vatsalyam (2020-21).
+                        Total beneficiaries 39." title="javsnagpur@gmail.com"
+                        matTooltipPosition="above"
+                        class="vat">Year5</span></a>
+                </li>
+            </ul>
+            <div [ngSwitch]="viewMode" class="t4b12">
+                  <div *ngSwitchCase="'2015'" class="tb175">
+                      
+                      
+                      <vatsalyam-year-data  year='2015'></vatsalyam-year-data>
+                     
+                  </div>
+                  <div *ngSwitchCase="'2016'">
+                      
+                      
+                    <vatsalyam-year-data  year='2016'></vatsalyam-year-data>
+                   
+                </div>
+                  <div *ngSwitchCase="'2017'" >
+                    
+                      <vatsalyam-year-data  year='2017'></vatsalyam-year-data>
+                  </div>
+                  <div *ngSwitchCase="'2018'" >
+                      
+                      <vatsalyam-year-data  year='2018'></vatsalyam-year-data>
+                  </div>
+                  <div *ngSwitchCase="'2019'" >
+                      
+                      <vatsalyam-year-data  year='2019'></vatsalyam-year-data>
+
+                  </div>
+                  <div *ngSwitchDefault>Other Contents</div>
+              </div>
+        </mat-card-content>
+    
+    </mat-card>
+    
+<mat-card class="example-card" *ngIf="page.title!='details'">
+    <mat-card-header>
+        <mat-card-title>
+            <h1 class="vat">{{page.title}}</h1>
+            <!-- <img class="thumbnail" [src]="page.image"> -->
+        </mat-card-title>
+        <mat-card-subtitle><h2 class="dta1">
+            <span color="accent" class="subtitle">{{page.subtitle}}</span>
+        </h2></mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+
+        <div *ngIf="page.title=='About Vatsalyam'">
+                <div class="abtintro">
+                    <div class="abtintropara1">
+                        <h2 class="abthd">Vatsalyam At a Glance</h2>
+                        <span class="abtvat">The Vatsalyam (Sanskrit:Pure Expression of Motherly Love)</span>
+                    {{page.content.intro.para1}}
+                    </div>
+
+                    <div class="abtintropara2">
+                        <h2 class="abthd">The Mission</h2>
+                        {{page.content.intro.para2}}
+                        <hr>
+                    </div>
+                </div>
+                <div class="abtpillars">
+                    <h2 class="abthd">Pillars of Vatsalyam</h2>
+                    <div class="abtpillarsintro">
+                        <span class="pillersf">{{page.content.pillars.intro}}</span>
+                    </div>
+
+                    <div class="abtpillarsfirst">
+                        <ol>
+                       <li>
+                           <span class="pillersf">{{page.content.pillars.first}}</span>
+                        </li>
+                        <li>
+                        <span class="pillersf">{{page.content.pillars.second}}</span>
+                        </li>
+                        <li>
+                        <span class="pillersf">{{page.content.pillars.third}}</span>
+                        </li>
+                        </ol>
+                    </div>
+                
+                </div>
+                <div class="abtmodel">
+                    <h2 class="abthd">The Model</h2>
+                    <div class="abtmodelintro">
+                        {{page.content.model.intro}}
+                        <hr>
+                    </div>
+                    <div class="abtmodelfirst">
+                        <h2 class="abthd">The Delay In Deciding To Seek Care</h2>
+                        1) {{page.content.model.first}}
+                        <hr>
+                    </div>
+                    <div class="abtmodelsecond">
+                        <h2 class="abthd">The Delay In Reaching Care</h2>
+                        {{page.content.model.second}}
+                        <hr>
+                    </div>
+                    <div class="abtmodelthird">
+                        <h2 class="abthd">The Delay In Receiving Appropriate Care On Arrival</h2>
+                        {{page.content.model.third}}
+                        <hr>
+                    </div>
+                    <div class="abtmodelfourth">
+                        <h2 class="abthd">The Delay In Referral To Nearby Hospital</h2>
+                        {{page.content.model.fourth}}
+                        <hr>
+                    </div>
+                </div>
+                <div class="abtcare">
+                    <h2 class="abthd">How We Care</h2>
+                    <div class="abtcareintro">
+                        {{page.content.care.intro}}
+                        <hr>
+                    </div>
+                    <div class="abtcarewt">
+                        <h2 class="abthd">Weight</h2>
+                        {{page.content.care.wt}}
+                        <hr>
+                    </div>
+                    <div class="abtcareht">
+                        <h2 class="abthd">Height</h2>
+                        {{page.content.care.ht}}
+                        <hr>
+                    </div>
+                    <div class="abtcarebp">
+                        <h2 class="abthd">Blood Pressure</h2>
+                        {{page.content.care.bp}}
+                        <hr>
+                    </div>
+                    <div class="abtcarerr">
+                        <h2 class="abthd">Respiratory Rate</h2>
+                        {{page.content.care.rr}}
+                        <hr>
+                    </div>
+                    <div class="abtcareifa">
+                        <h2 class="abthd">Iron-folic acid (IFA)</h2>
+                        {{page.content.care.ifa}}
+                        <hr>
+                    </div>
+                    <div class="abtcarenut">
+                        <h2 class="abthd">Nutrition</h2>
+                        {{page.content.care.nut}}
+                        <hr>
+                    </div>
+                    <div class="abtcaresleep">
+                        <h2 class="abthd">Workload,Rest, and Sleep</h2>
+                        {{page.content.care.sleep}}
+                        <hr>
+                    </div>
+                    <div class="abtcaresex">
+                        <h2 class="abthd">Sex</h2>
+                        {{page.content.care.sex}}
+                        <hr>
+                    </div>
+                    <div class="abtcarepostnatal">
+                        <h2 class="abthd">Post Natal</h2>
+                        {{page.content.care.postnatal}}
+                        <hr>
+                    </div>
+                </div>
+                <div class="abtfinance">
+                    <h2 class="abthd">Funds</h2>
+                    {{page.content.finance}}
+                </div>
+
+        </div>
+        <div *ngIf="page.title=='Jangoraitad Adivasi Vikas Sanstha (JAVS)'"  class="dta1">
+           <div  *ngFor="let ele of page.content;" class="javsintro" > 
+
+               <!-- {{ele|slice:0:limit}} -->
+               {{ele}}
+
+<!--         
+                <span matTooltip="More" class="show" *ngIf ="limit < 150" (click)="showMoreContents()">
+                        Show More...
+                </span >
+                <span class="show" matTooltip="Less" *ngIf ="limit > 150" (click)="showLessContents()">
+                        Show Less.....
+                </span> -->
+
+            </div>
+        </div>
+        <div *ngIf="page.title=='Login'">
+              
+                <loginform></loginform>
+                
+        </div>
+        <div *ngIf="page.title=='Vatsalyam Video'">
+            <!-- <vg-player>
+                <vg-controls>
+                    <vg-play-pause></vg-play-pause>
+                    <vg-playback-button></vg-playback-button>
+              
+                    <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+              
+                    <vg-scrub-bar>
+                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+                        <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+                    </vg-scrub-bar>
+              
+                    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+              
+                    <vg-mute></vg-mute>
+                    <vg-volume></vg-volume>
+              
+                    <vg-fullscreen></vg-fullscreen>
+                </vg-controls> -->
+              <table><tr><td colspan=2>
+                <video #media  controls preload="auto"  class="video" (ended)="endVideo()"
+                poster="../../assets/vatsalyamlogo.jpg">
+                    
+                    <source src="../../assets/vatsalyamadkinnar.mp4" 
+                    type="video/mp4">
+                </video>
+                </td>
+                </tr>
+                <tr>
+                <td><button mat-raised-button color="primary" (click)="toggleVideo()">Start Video</button>
+                </td><td align="right">
+                <button mat-raised-button color="primary" (click)="pauseVideo()">Pause Video</button>
+             <!-- </vg-player> -->
+             </td>
+             </tr>
+             <tr><td colspan=2>
+                 <div class="tagline" >You don’t have to be biological mother 
+                     to mother a child.
+                    </div>
+             </td></tr>
+             <tr><td colspan=2><span class="tagend" *ngIf="vOn">They have understood, now it is your turn </span>
+             </td></tr>
+             </table>
+             <hr>
+             
+
+        </div>
+        
+        <div  *ngIf="page.title==='JAVS Online Bank Payments Options'">  
+            <table ><tr><th>Acct Name:</th><th class="bnk">Jangoraitad Adivasi Vikas Sanstha</th></tr></table>
+            <ul class="bnk">
+                <span matTooltip="Bank Name:State Bank Of India. 
+                Account No:35225435926
+                IFS Code:SBIN0070602" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                matTooltipClass="tooltip-pd">
+                    <li >
+                        <span >Bank Name:</span>
+                        <span class="bnk">{{page.content.sbi.Bank}}</span>
+                    </li>
+                    <li>
+                        <span>Account No:</span>
+                        <span class="bnk">{{page.content.sbi.Acct}}</span>
+                    </li>
+                    <li>
+                        <span>IFS Code:</span>
+                        <span class="bnk">{{page.content.sbi.IFSC}}</span>
+                    </li>
+                </span>
+                    <div><hr></div>
+                <span matTooltip="Bank Name:Axis Bank Ltd.
+                Account No:916010016242644
+                IFS Code:UTIB0001828" matTooltipClass="tooltip-pd" title="javsnagpur@gmail.com"
+                matTooltipPosition="right">
+                    <li>
+                        <span 
+                        >Bank Name:</span>
+                        <span class="bnk">{{page.content.axis.Bank}}</span>
+                    </li>
+                    <li>
+                        <span>Account No:</span>
+                        <span class="bnk">{{page.content.axis.Acct}}</span>
+                    </li>
+                    <li>
+                        <span>IFS Code:</span>
+                        <span class="bnk">{{page.content.axis.IFSC}}</span>
+                    </li>
+                </span>
+                    <div><hr></div>
+                <span matTooltipClass="tooltip-pd"
+                matTooltipPosition="below"
+                matTooltip="Bank Name:RBL Bank Ltd
+                Account No:309002377197
+                IFS Code:RATN0000163" title="javsnagpur@gmail.com" >
+                    <li>
+                        <span 
+                        >Bank Name:</span>
+                        <span class="bnk">{{page.content.rbl.Bank}}</span>
+                    </li>
+                    <li>
+                        <span>Account No:</span>
+                        <span class="bnk">{{page.content.rbl.Acct}}</span>
+                    </li>
+                    <li>
+                        <span>IFS Code:</span>
+                        <span class="bnk">{{page.content.rbl.IFSC}}</span>
+                    </li>
+                </span>
+            </ul>
+        </div>
+        <div *ngIf="page.title=='Contact'">
+            <div matTooltip="{{page.content.land.name+' '+page.content.land.street
+        +' '+page.content.land.email+' '+page.content.land.mobile}}"
+        matTooltipClass="tooltip-pd" matTooltipPosition="right" title="javsnagpur@gmail.com"
+            >
+            <ul class="bnk1">
+                
+                <li>
+                    <!-- <span>Contact Address</span> -->
+                    <span class="bnk">{{page.content.land.name}}</span>
+
+                </li>
+                <!-- <li>
+                    <span class="bnk">{{page.content.land.street}}</span>
+                </li>
+                <li>
+                   <span class="bnk">{{page.content.land.pin}}</span>
+                </li>
+                <li>
+                  <span class="bnk">{{page.content.land.email}}</span>
+                </li>
+                <li>
+                   <span class="bnk">{{page.content.land.mobile}}</span>
+                </li> -->
+            </ul>
+            
+            </div>
+            <mat-grid-tile-header>
+                <h1>Team Vatsalyam</h1>
+            </mat-grid-tile-header>
+            <mat-grid-list cols="4" rowHeight="2:5" gutterSize="15px">
+                <span matTooltip="Shri Prabodh C Vekahnde who 
+                heads the organization and under whose leadership Vatsalyam is taking shape"
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com">
+                <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
+                    <mat-grid-tile-header><h2>President</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/pcv1.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>p c v</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                </span>
+                <span matTooltip="Shri Mukunda P Uiekey founder of JAVS "
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                >
+                <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
+                    <mat-grid-tile-header><h2>Vice President</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/mukunda.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>m p u</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                </span>
+                <span matTooltip="Shri Deepak B Trivedi who takes much pleasure in 
+                successfully executing all the projects of JAVS. His focus is on UdyogUdarak project
+                under which JAVS supports street vendors." title="javsnagpur@gmail.com"
+                matTooltipClass="tooltip-pd" matTooltipPosition="above"
+                >
+                <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
+                    <mat-grid-tile-header><h2>Secretary</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/deepak.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>d b t</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                </span>
+            
+            <span matTooltip="Shri Rohit K Dake  ensures timely fund allotment to all 
+            projects of JAVS. He additioanlly takes care of VrudhhaUdarak and GranthaUdarak
+             projects under which JAVS supports elderly senior citizens and 
+             maintains collection of unique & good library of books for needy people."
+            matTooltipClass="tooltip-pd" matTooltipPosition="right" title="javsnagpur@gmail.com"
+            >
+                <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
+                    <mat-grid-tile-header><h2>Treasurer</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/rohit.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>r k d</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                </span>
+                <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
+                    <mat-grid-tile-header><h2>Gynae cologist</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/dr.smita.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>s m c</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
+                    <mat-grid-tile-header><h2>Project Manager</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/namita.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>n p</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
+                    <mat-grid-tile-header><h2>Pharmacist</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/kiran.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>k c s</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
+                    <mat-grid-tile-header><h2>Web Organizer</h2></mat-grid-tile-header>
+                    <img class="cover" src="../../assets/mandar.jpg" height=110 width=600>
+                    <mat-grid-tile-footer><h2>m p v</h2></mat-grid-tile-footer>
+                </mat-grid-tile>
+                
+              </mat-grid-list>
+        </div>
+
+        <div *ngIf="page.title=='Vatsalyam Mentors'">
+            <div class="bnk">
+            <span>Hover the image to know more about mentor</span>
+            </div>
+                <mat-grid-tile-header>
+                    <h1>Vatsalyam Mentors</h1>
+                </mat-grid-tile-header>
+                <mat-grid-list cols="4"  rowHeight="250px" [gutterSize]="'3px'" >
+                    <span matTooltip="{{page.content.salinaa.comment}}"
+                    matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                    <mat-grid-tile colspan="2" rowspan=1
+                    [style.border]='getImgBorder1()' class="mgt" 
+                    >
+                        
+                        <img class="cover1" src="{{page.content.salinaa.img}}">
+                    
+                        <mat-grid-tile-footer>
+                            <span>{{page.content.salinaa.name1}}</span>
+                                <span>
+                                   {{ page.content.salinaa.place}}
+
+                                </span>
+                        </mat-grid-tile-footer>
+                    </mat-grid-tile>
+                    </span><div></div><div></div>
+                    <span matTooltip="{{page.content.sayali.comment}}"
+                    matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                    <mat-grid-tile colspan="2" rowspan=1
+                    [style.border]='getImgBorder1()' class="mgt">
+                    
+                        <img class="cover1" src="{{page.content.sayali.img}}">
+                    
+                        <mat-grid-tile-footer>
+                            <span>{{page.content.sayali.name1}}</span>
+                                <span>
+                                   {{ page.content.sayali.place}}
+
+                                </span>
+                        </mat-grid-tile-footer>
+                    </mat-grid-tile>
+                    </span><div></div><div></div>
+                    <span matTooltip="{{page.content.vinay.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                        <mat-grid-tile colspan="2" rowspan=1
+                        [style.border]='getImgBorder1()' class="mgt" 
+                        >
+                            
+                            <img class="cover1" src="{{page.content.vinay.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.vinay.name1}}</span>
+                                <span>
+                                   {{ page.content.vinay.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span><div></div><div></div>
+                    <span matTooltip="{{page.content.naren.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                        <mat-grid-tile colspan="2" rowspan=1
+                        [style.border]='getImgBorder1()' class="mgt" 
+                        >
+                        <img class="cover1" src="{{page.content.naren.img}}">
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.naren.name1}}</span>
+                                <span>
+                                   {{ page.content.naren.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span><div></div><div></div>
+                    <span matTooltip="{{page.content.dhiraj.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover17" src="{{page.content.dhiraj.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.dhiraj.name1}}</span>
+                                <span>
+                                   {{ page.content.dhiraj.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.suraj.comment}}"
+                    matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                    <mat-grid-tile colspan="2" rowspan=1
+                    [style.border]='getImgBorder1()' class="mgt" 
+                    >
+                        
+                        <img class="cover1" src="{{page.content.suraj.img}}">
+                    
+                        <mat-grid-tile-footer>
+                            <span>{{page.content.suraj.name1}}</span>
+                                <span>
+                                   {{ page.content.suraj.place}}
+
+                                </span>
+                        </mat-grid-tile-footer>
+                    </mat-grid-tile>
+                    </span><div></div><div></div>
+
+                    <span matTooltip="{{page.content.ramesh.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover171" src="{{page.content.ramesh.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.ramesh.name1}}</span>
+                                <span>
+                                   {{ page.content.ramesh.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.vinod.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.vinod.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.vinod.name1}}</span>
+                                <span>
+                                   {{ page.content.vinod.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.mahesh.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                        
+                            <img class="cover172" src="{{page.content.mahesh.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.mahesh.name1}}</span>
+                                <span>
+                                   {{ page.content.mahesh.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.prasad.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.prasad.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.prasad.name1}}</span>
+                                <span>
+                                   {{ page.content.prasad.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.niraj.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.niraj.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.niraj.name1}}</span>
+                                <span>
+                                   {{ page.content.niraj.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.atul.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.atul.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.atul.name1}}</span>
+                                <span>
+                                   {{ page.content.atul.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+            
+
+
+        </mat-grid-list>
+            
+
+        </div>
+    </mat-card-content>
+</mat-card>
+</div>
+<div *ngIf="this.getIsM() && page.title=='Details'" >
+    <mat-card  class="example-card">
+        
+        <mat-card-content class="gray">
+            <h3><span color="accent"> Vatsalyammm Summary</span></h3>
+            <ul class="nav nav-pills nav-fill gray" >
+                <li [class.active]="viewMode=='2015'"  class="nav-link active">
+                    <a  (click)="viewMode='2015'"><span class="vat">Vat1</span></a>
+                </li>
+                <li [class.active]="viewMode=='2016'"  class="nav-link">
+                    <a  (click)="viewMode='2016'"><span class="vat">Vat2</span></a>
+                </li>
+                <li [class.active]="viewMode=='2017'"  class="nav-link">
+                    <a  (click)="viewMode='2017'"><span class="vat">Vat3</span></a>
+                </li>
+                <li [class.active]="viewMode=='2018'"  class="nav-link">
+                    <a  (click)="viewMode='2018'"><span class="vat">Vat4</span></a>
+                </li>
+                <li [class.active]="viewMode=='2019'"  class="nav-link">
+                    <a  (click)="viewMode='2019'"><span class="vat">Vat5</span></a>
+                </li>
+            </ul>
+            <div [ngSwitch]="viewMode" class="nav-justified nav-fill 
+            nav ">
+                  <div *ngSwitchCase="'2015'">
+                      
+                      
+                      <vatsalyam-year-data year='2015' mob='yes'
+                      width=this.scrWidth
+                      left="60"
+                      class="mob"
+                      >
+                    
+                    </vatsalyam-year-data>
+                     
+                  </div>
+                  <div *ngSwitchCase="'2016'">
+                    
+                      <vatsalyam-year-data year='2016'></vatsalyam-year-data>
+                  </div>
+                  <div *ngSwitchCase="'2017'">
+                      
+                      <vatsalyam-year-data year='2017'></vatsalyam-year-data>
+                  </div>
+                  <div *ngSwitchCase="'2018'">
+                      
+                      <vatsalyam-year-data year='2018'></vatsalyam-year-data>
+
+                  </div>
+                  <div *ngSwitchCase="'2019'">
+                      
+                    <vatsalyam-year-data year='2019'></vatsalyam-year-data>
+
+                </div>
+                  <div *ngSwitchDefault>Other Contents</div>
+              </div>
+        </mat-card-content>
+    
+    </mat-card>
+</div>
+
+<!--
+<router-outlet></router-outlet>
+-->

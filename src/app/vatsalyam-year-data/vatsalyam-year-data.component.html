@@ -1,0 +1,58 @@
+
+<div fxLayout fxLayoutAlign="center center">
+  <mat-form-field fxFlex="85%">
+    <input matInput type="text" 
+    (keyup)="doFilter($event.target)" placeholder="Search after selecting any of the above tab">
+  </mat-form-field>
+</div>
+
+<div [class.mat-elevation-z8]="true" class="abc">
+
+    <table class="t01" mat-table  [dataSource]="dataSource">
+      <ng-container matColumnDef='Id'>
+        <th mat-header-cell *matHeaderCellDef> <span class="col" >ID.</span> </th>
+        <td mat-cell *matCellDef="let element"> {{element.Id}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+<ng-container matColumnDef="FullName">
+    <th mat-header-cell *matHeaderCellDef> <span class="col">Full Name</span> </th>
+    <td  mat-cell *matCellDef="let element">
+      <span class="col" >
+        {{element.FirstName+' '+element.LastName }}  
+        <span matTooltip="Big Thanks to {{element.Sponsor}} from {{element.FirstName+' '+element.LastName}}"
+        class="sponsor" title="javsnagpur@gmail.com" matTooltipClass="tooltip-pd">supportedd by  {{element.Sponsor}}</span>
+      </span></td>
+  </ng-container>
+  <!--
+  <ng-container matColumnDef="LastName">
+    <th mat-header-cell [hidden]="show" *matHeaderCellDef> Last Name </th>
+    <td mat-cell  [hidden]="show" *matCellDef="let element"> {{element.LastName+"OK"}} </td>
+  </ng-container>
+-->
+   <ng-container matColumnDef="Phone">
+    <th mat-header-cell *matHeaderCellDef><span class="col"> Phone & Adhar</span> </th>
+    <td mat-cell *matCellDef="let element"> {{element.Phone+' '+element.Adhar}} </td>
+  </ng-container>
+
+  <!-- Symbol Column 
+  <ng-container matColumnDef="Adhar">
+    <th mat-header-cell *matHeaderCellDef><span class="col"> Adhar No</span> </th>
+    <td mat-cell *matCellDef="let element"> {{element.Adhar}} </td>
+  </ng-container>
+-->
+  <ng-container matColumnDef="Summary">
+    <th mat-header-cell *matHeaderCellDef><span class="col">Summary</span> </th>
+    <td mat-cell *matCellDef="let element" class="rt"> {{element.Summary}} </td>
+  </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  <div class="pagi">
+    <mat-paginator #paginator [pageSizeOptions]="[2,6,12]" 
+        showFirstLastButtons>
+    </mat-paginator>
+  </div>
+</div>
+

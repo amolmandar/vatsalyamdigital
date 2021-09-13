@@ -1,0 +1,731 @@
+:host {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+mat-grid-tile-header{
+    text-align: start;
+    justify-content:space-around;
+    width: auto;
+    height: 10px;
+}
+mat-grid-tile {
+    background: lightblue;
+    padding:12px;
+    
+  }
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 10px;
+  }
+  .tagline, .tagend{
+    font-weight: bold;
+      color:blue;
+      font-size: medium;
+      font-family: 'Padauk';
+      /* font-size: xx-large; */
+      /* color:pink; */
+      background-color: white;
+      font-feature-settings: "zero";
+      /* font-weight: bolder; */
+  }
+  .mgt{
+    width: 100%;
+    height: 30%;
+  }
+  .video{
+      width:100%;
+      height:90%;
+  }
+  .cover{
+      object-fit: cover;
+      width: 100%;
+      height: 59%;
+      padding: 0px;
+  }
+  .vatbox{
+      border: 2px solid royalblue;
+      padding: 2px;
+      box-sizing: border-box;
+  }
+  .abtintr1o,.abtmodel1{
+      font-size: large;
+      /* border: 2px solid ; */
+      /* box-sizing: border-box; */
+  }
+  .abtintropara1,.abtintropara2,.abtmodelintro,
+  .abtmodelfirst,.abtmodelsecond,
+  .abtmodelthird,.abtmodelfourth,
+  .abtcareintro,.abtcarewt,.abtcareht,
+  .abtcarebp,.abtcarerr,.abtcareifa,.abtcaresex,
+  .abtcarenut,.abtcaresleep,.abtcarepostnatal,.abtfinance,.javsintro
+  {
+      /* border:2px solid; */
+      font-family:'Padauk';
+      font-size: large;
+  }
+  .abtpillar1s,.abtmod1el,.abtca1re{
+    box-sizing: content-box;
+    /* box-shadow: beige; */
+    /* border:2px solid; */
+  }
+  .abtvat{
+      font-weight: bold;
+      color:slateblue;
+  }
+  .abthd{
+      color:blue;
+  }
+  .pillersf{
+      font-size: large;
+      font-family: 'Padauk';
+      
+      
+  }
+  .abtpillarsfirs1t{
+      background-color: pink;
+  }
+  .abtpillarssecon1d{
+      background-color: white;
+  }
+  .abtpillarsthird1{
+    background-color: pink;
+}
+
+  .imgbig{
+      overflow: hidden;
+  }
+  .imgbig img{
+    transform-origin: 65% 75%;
+    transition: transform .6s, filter .5s ease;
+    filter: brightness(100%);
+  }
+  .imgbig:hover img{
+    transform: scale(1.5);
+  }
+  .cover1{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+.cover17{
+    object-fit:cover;
+    width: 150%;
+    height: 95%;
+    /* -webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+transform: rotate(-90deg); */
+}
+
+.cover171{
+    object-fit:cover;
+    width: 150px;
+    height: 95%;
+}
+.cover172{
+    object-fit:cover;
+    width: 150px;
+    height: 95%;
+}
+
+  h2{
+      text-align: left;
+      /* text-combine-upright:initial; */
+  }
+  h3 { 
+    display: block;
+    font-size:large;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight:bolder;
+    color:royalblue;
+    font-family: Padauk;
+    
+}
+.h3nm { 
+    display:inline;
+    font-size: xx-small;
+    justify-content:space-between;
+    font-weight:normal;
+    color:red;
+    
+}
+.fullBg {
+    z-index:0;
+    position: absolute;
+    top: 0.2;
+    left: 124%;
+}
+.thumbnail{
+    width:122px;
+    height: 72px;
+
+}
+.vat{
+    font-weight: bold;
+    font-family: Padauk;
+}
+.des {
+    --mdc-typography-font-family:'Padauk';
+  }
+.tb{
+      float:left;
+  }
+
+.tb12{
+    width: 350px;
+    height: 450px;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* box-shadow: inset 0 0 4px #707070; */
+
+}
+.tb15{
+    width: 350px;
+    height: 450px;
+}
+
+.flex-container{
+    position: absolute;
+    /* max-width:890px; */
+    width:30%;
+    height:95%;
+    margin: 5px;
+    /* display: flex; */
+   /* flex-direction: column; */
+    /* display:block; */
+    top: 60px;
+    /* margin-left:122px;   */
+    /* resize:both; */
+    /* vertical-align:top;  */
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    right: 0;
+    overflow-y: scroll;
+    font-family: 'Padauk';
+}
+.flex-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    box-shadow: inset 0 0 4px #707070;
+    border-radius: 10px;
+}
+.flex-container::-webkit-scrollbar{
+        width: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background:green;
+}
+.flex-container::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 10px;
+}
+.example-card {
+    width:32%;/*365px;*/
+    height:95%;
+    margin:10px; 
+    top:28px; 
+    overflow:auto;
+    /* word-spacing: 7em; */
+    position: fixed;
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    font-family: 'Padauk';
+    font-size: medium;
+}
+.example-card::-webkit-scrollbar {
+        width: 10px;
+        overflow-y: scroll;
+        background: green;
+        box-shadow: inset 0 0 4px #707070;
+    }
+    
+.example-card::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 20px;
+    }
+    .example-card::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 4px;
+    }
+    /* Buttons */
+.example-card::-webkit-scrollbar-button:single-button {
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 6px;
+    width: 16px;
+  }
+  /* Up */
+  .example-card::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+  }
+  
+  .example-card::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #777777 transparent;
+  }
+  /* Down */
+  .example-card::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #555555 transparent transparent transparent;
+  }
+  
+  .example-card::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #777777 transparent transparent transparent;
+  }
+
+@media (min-width:320px) {
+        /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+        .example-card{
+           width:95%;
+           height:99%;
+           margin:10px; 
+           top:-10px; 
+           left:24px;
+           overflow:auto;
+           position: fixed;
+           outline: 2px solid white;
+           background: rgba(194, 187, 206, 0.9);
+           
+       } 
+
+       
+    
+   }
+
+@media (min-width: 481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    .example-card{
+        position:absolute;
+        top:4px;
+        margin:5px;
+        width:95%;
+        height:99%;
+        left:24px;
+       
+   } 
+   .tb15{
+       width:22%;
+   }
+   .mob{
+       left:10px;
+   }
+}
+
+@media (min-width: 641px){
+        /* portrait tablets, portrait iPad, landscape e-readers, 
+        landscape 800x480 or 854x480 phones */ 
+    .example-card{
+       width:95%;
+       height:99%;
+       margin:10px; 
+       top:-10px; 
+       left:24px;
+       overflow:auto;
+       position: fixed;
+       outline: 2px solid white;
+       background: rgba(194, 187, 206, 0.9);
+       
+   } 
+   .tb12{
+    width:292%;
+    height:295%;
+}
+.gray{
+    background:rgba(194, 187, 206, 0.9);
+}
+   .mob{
+        left:20px;
+        width:292%;
+        height:295%;
+
+   }
+}
+
+
+
+@media (min-width: 961px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */
+
+/* All normal desktops are captured here possibly except one 
+    may be 1024 X 768
+*/
+.fullBg {
+    z-index:0;
+    position: relative;
+    top: 0.3;
+    left: 124%;
+}
+
+     .example-card{
+    width:95%;/*365px;*/
+    height:95%;
+    margin:10px; 
+    top:0px; 
+    overflow:auto;
+    left:4%;
+    position: fixed;
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    } 
+    .example-card::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container{
+        position: absolute;
+        width:30%;
+        height:95%;
+        margin: 5px;
+        /* display: flex; */
+       /* flex-direction: column; */
+        /* display:block; */
+        top: 70px;
+        /* margin-left:122px;   */
+        /* resize:both; */
+        /* vertical-align:top;  */
+        outline: 2px solid white;
+        background: rgba(194, 187, 206, 0.9);
+        right: 0;
+        overflow-y: scroll;
+    }
+    .flex-container::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container::-webkit-scrollbar{
+            width: 20px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: green;
+    }
+    .flex-container::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 20px;
+    }
+    .tb12{
+        width:92%;
+        /* height:95%; */
+    }
+    .mob{
+        left:0px;
+    }
+}
+@media (min-width: 1029px)  
+/* and (max-height: 1366px) 
+and (-webkit-min-device-pixel-ratio: 1.5) { */
+    {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */
+
+/* All normal desktops are captured here possibly except one 
+    may be 1024 X 768
+*/
+.fullBg {
+    z-index:0;
+    position: relative;
+    top: 0.3;
+    left: 124%;
+}
+
+     .example-card{
+    width:30%;/*365px;*/
+    height:95%;
+    margin:10px; 
+    top:20px; 
+    overflow:auto;
+    left:0%;
+    position: fixed;
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    } 
+    .example-card::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container{
+        position: absolute;
+        width:30%;
+        height:95%;
+        /* margin: 5px; */
+        /* display: flex; */
+       /* flex-direction: column; */
+        /* display:block; */
+        top: 60px;
+        /* margin-left:122px;   */
+        /* resize:both; */
+        /* vertical-align:top;  */
+        outline: 2px solid white;
+        background: rgba(194, 187, 206, 0.9);
+        right: 0;
+        overflow-y: scroll;
+    }
+    .flex-container::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container::-webkit-scrollbar{
+            width: 12px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background: greenyellow;
+    }
+    .flex-container::-webkit-scrollbar-thumb {
+        background:green;
+        border-radius: 10px;
+    }
+    .tb122{
+        width:92%;
+        height:95%;
+    }
+    .mob{
+        left:0px;
+    }
+}
+
+
+
+@media (min-width: 1281px)  {
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    /* big landscape tablets, laptops, and desktops */
+    /* hi-res laptops and desktops */
+/* laptop desktop gets here */
+    
+     .example-card{
+    width:30%;/*365px;*/
+    height:95%;
+    margin:10px; 
+    top:17px; 
+    overflow-y:auto;
+    left:0%;
+    position: fixed;
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    } 
+    .example-card::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+     /* Buttons */
+.example-card::-webkit-scrollbar-button:single-button {
+    background-color: #bbbbbb;
+    display: block;
+    border-style: solid;
+    height: 13px;
+    width: 16px;
+  }
+  /* Up */
+  .example-card::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent #555555 transparent;
+  }
+  
+  .example-card::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+    border-color: transparent transparent #777777 transparent;
+  }
+  /* Down */
+  .example-card::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-width: 8px 8px 0 8px;
+    border-color: #555555 transparent transparent transparent;
+  }
+  
+  .example-card::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+    border-color: #777777 transparent transparent transparent;
+  }
+    .flex-container{
+        position: absolute;
+        width:29%;
+        height:95%;
+        margin: 5px;
+        /* display: flex; */
+       /* flex-direction: column; */
+        /* display:block; */
+        top: 20px;
+        /* margin-left:122px;   */
+        /* resize:both; */
+        /* vertical-align:top;  */
+        outline: 2px solid white;
+        background: rgba(194, 187, 206, 0.9);
+        right: 0;
+        overflow-y: auto;
+    }
+    .flex-container::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container::-webkit-scrollbar{
+            width: 10px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            background:green;
+    }
+    .flex-container::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 12px;
+    }
+    .tb1223{
+        width:92%;
+        height: 90%;
+        padding: 0px;
+    }
+    
+    .mob{
+        left:0px;
+    }
+    .fullBg {
+        z-index:0;
+        position: relative;
+        top: 3;
+        left: 124%;
+    }
+}  
+
+@media (min-width: 2400px)  {
+    /* big iMacs 27 in */
+    .fullBg {
+        z-index:0;
+        position: relative;
+        top: 0.2;
+        left: 194%;
+    }
+     .example-card{
+    width:20%;/*365px;*/
+    height:95%;
+    margin:10px; 
+    top:20px; 
+    overflow:auto;
+    left:0%;
+    position: fixed;
+    outline: 2px solid white;
+    background: rgba(194, 187, 206, 0.9);
+    } 
+    .flex-container{
+        position: absolute;
+        width:28%;
+        height:95%;
+        margin: 5px;
+        /* display: flex; */
+       /* flex-direction: column; */
+        /* display:block; */
+        top: 60px;
+        /* margin-left:122px;   */
+        /* resize:both; */
+        /* vertical-align:top;  */
+        outline: 2px solid white;
+        background: rgba(194, 187, 206, 0.9);
+        right: 0;
+    }
+    .flex-container::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        box-shadow: inset 0 0 4px #707070;
+        border-radius: 10px;
+    }
+    .flex-container::-webkit-scrollbar{
+            width: 20px;
+            overflow-y: scroll;
+            background: grey;
+    }
+    .flex-container::-webkit-scrollbar-thumb {
+        background: blue;
+        border-radius: 20px;
+    }
+    .tb122{
+        width:92%;
+        height:92%;
+        padding: 12px;
+        /* display:inline-flex;
+        position: sticky; */
+        background: rgba(194, 187, 206, 0.9);
+    }
+    .mob{
+        left:0px;
+    }
+} 
+mat-grid-tile {
+    background: lavender;
+}
+
+
+.subtitle{
+    
+    font-size: larger;
+    font-family:'Padauk';
+}
+ul.bnk1{
+    
+    list-style-type: none; /* Remove bullets */
+    
+  }
+  .bnk{
+    color:blue;
+    padding: 4; /* Remove padding */
+    margin: 2; /* Remove margins */
+    font-size:large;
+    list-style-type: none;
+    font-family: Padauk;
+  }
+mat-card-header {
+    color:#3f51b5;
+}
+
+mat-card-content {
+    padding: 8px;
+}
+
+
+.example-container{
+    text-align: center
+}
+
+.form-container{
+    width: 400 px; 
+    margin: 0 px auto; 
+    margin-top: 200 px
+}
+
+.form-field{
+    display: block
+}
+.dta1{
+    font-family: 'Padauk';
+   
+    font-size:large;
+    
+    font-size-adjust: 0.5;
+}
+.show{
+    color: red;
+    
+}
+span.show::selection {
+    background-color: green;
+    color: white;
+}
+.show:hover{
+    background-color: black;
+    color: white;
+    cursor:pointer;
+}
+.vat:hover{
+    cursor:pointer;
+}

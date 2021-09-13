@@ -1,0 +1,114 @@
+.ftb{
+  font-family:'Padauk';
+}
+mat-toolbar {
+    position: fixed;
+    z-index: 100;
+    overflow-x: auto;
+    height:min-content;
+  }
+  
+  .mb {
+    min-height: 48px; 
+    height: 95%;
+    width: 50px;
+    text-decoration:none;
+    font-family: 'Padauk';
+  }
+  @media (min-width: 0) and (max-width: 1100px) and (orientation: portrait) {
+    mat-toolbar {
+      min-height: 56px; 
+      width:55px;
+      left: 0;
+      margin: 0;
+      height:95%;
+      
+    }
+    
+    .md-toolbar-tools {
+      height: 56px;
+      max-height: 56px; } 
+    }
+    /* @media (min-width: 0) and (max-width: 868px) and (orientation: portrait) {} */
+  
+  @media (min-width: 0) and (max-width: 1959px) and (orientation: landscape) {
+    .mb {
+      min-height: 48px; 
+      height: 95%;
+      width: 55px;
+      text-decoration:none;
+    }
+    .mb a:active{
+      text-decoration:none;
+    }
+    .md-toolbar-tools {
+      height: 48px;
+      max-height: 48px; 
+    } 
+  }
+  mat-toolbar-row {
+    justify-content:space-between;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .nmb a{
+    text-decoration:none;
+  }
+  .nmb a:active {
+    background-color: rgba(0,0,0, 0.3);
+    text-decoration:none;
+
+  }
+  a:hover{
+    text-decoration:none;
+  }
+  .lnk{
+    text-decoration:none;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  h1.light {
+    font-weight: 200;
+    
+  }
+  .light{
+    color:white;
+    font-size:large;
+    text-decoration:none;
+    
+  }
+  .lightmb{
+    color:white;
+    font-size:xx-small;
+    text-decoration:none;
+    text-align: left;
+    left: 0;
+    text-indent: 0in;
+    
+  }
+  .lightmb a:active {
+    background-color: rgba(0,0,0, 0.3);
+    text-decoration:none;
+
+  }
+  .mb1{
+    color:white;
+    font-size:xx-small;
+    text-decoration:none;
+    text-align: left;
+    left: 0;
+    text-indent: 0in;
+    float:left;
+    
+  }
+  .mb1 a:active {
+    background-color: rgba(0,0,0, 0.3);
+    text-decoration:none;
+
+  }
+  

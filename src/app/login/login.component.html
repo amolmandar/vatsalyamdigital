@@ -1,0 +1,92 @@
+
+<div *ngIf="this.name">
+  <table  border="1">
+    <tr ><th>Name</th><th colspan=2>Email</th></tr>
+    <tr *ngFor="let r of resData">
+      <td>{{r['name']}} </td>
+      <td>{{r['email']}}</td>
+      <td><button mat-raised-button color="primary" (click)="getout()">Logout</button></td>
+    </tr>
+  </table> 
+  </div>
+
+
+<div class="example-container" *ngIf="!len">
+    
+    <div class="form-container">
+      <caption class="lcap">Login Form</caption>
+      <form [formGroup]="loginForm" (submit)="submit()">
+        <mat-form-field class="form-field" appearance="outline">
+          <mat-label> E-mail
+          </mat-label>
+          <input matInput formControlName="email" name="em"required>
+          <mat-error *ngIf="loginForm.controls.email.touched && loginForm.controls.email.invalid">
+            <span *ngIf="loginForm.controls.email.errors.required">This field is mandatory.</span>
+            <span *ngIf="loginForm.controls.email.errors.pattern">This field is invalid.</span>
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="form-field" appearance="outline">
+          <mat-label> Password
+          </mat-label>
+          <input matInput formControlName="password" type="password">
+          <mat-error *ngIf="loginForm.controls.password.touched && loginForm.controls.password.invalid">
+            <span *ngIf="loginForm.controls.password.errors.required">This field is mandatory.</span>
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Log In</button>
+      </form>
+    </div>
+    
+  </div>
+<div *ngIf="this.name.length">
+      <div ><h3>
+          Thanks a lot <h2>{{this.name}}</h2>. Vatsalyam requires more such donors.
+          Please feel free to drop a word about your expirence with Vatsalyam.
+          </h3>
+      </div>
+      <div class="example-container">
+        
+        <div class="form-container">
+          <caption class="fbcap">Feedback Form</caption>
+          <form [formGroup]="feedbackForm" (submit)="submitFeedback()">
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label> E-mail
+              </mat-label>
+              <input matInput formControlName="email" name="em"required
+                
+              >
+              <mat-error *ngIf="feedbackForm.controls.email.touched && 
+              feedbackForm.controls.email.invalid">
+                <span *ngIf="feedbackForm.controls.email.errors.required">This field is mandatory.</span>
+                <span *ngIf="feedbackForm.controls.email.errors.pattern">This field is invalid.</span>
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label> Feedback
+              </mat-label>
+              <textarea matInput placeholder="Enter your feedback" 
+              formControlName="feedbackField" required></textarea>
+              <!-- <input matInput formControlName="password" type="textara"> -->
+              <mat-error *ngIf="feedbackForm.controls.feedbackField.touched && 
+              feedbackForm.controls.feedbackField.invalid">
+                <span *ngIf="feedbackForm.controls.feedbackField.errors.required">This field is mandatory.</span>
+              </mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary" type="submit">Feed Back</button>
+          </form>
+        </div>
+        
+      </div>
+
+
+
+</div>
+  <!-- <div class="pdf-container" *ngIf="len" style="height: 100px;">
+    <ngx-extended-pdf-viewer [src]="'assets/sagarsahil.pdf'" 
+      [useBrowserLocale]="true" 
+      height="90vh" [textLayer]="true" 
+      [showHandToolButton]="true" 
+      [zoom]= 50>
+    </ngx-extended-pdf-viewer>
+  </div> -->
+

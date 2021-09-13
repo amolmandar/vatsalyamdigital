@@ -1,0 +1,102 @@
+<!---->
+<table  class="ftb">
+        <tr><td>
+<mat-toolbar class="nmb" color="accent" *ngIf="!this.isM">
+    <button mat-button matTooltipClass="tooltip-pd" 
+    matTooltip="Vatsalyam is pure expression of motherly love" matTooltipPosition="right">
+        <a [routerLink]="['home']" routerLinkActive="active" class="lnk">
+    <span class="light">VATSALYAM</span></a>
+    </button>
+    <p></p>
+<span class="spacer"></span>
+<button mat-button matTooltip="Gives Details About Vatsalyam"  matTooltipClass="tooltip-pd" 
+        matTooltipPosition="below">
+        <a [routerLink]="['home']" routerLinkActive="active">
+                <span class="light">HOME</span></a>
+</button>
+<button mat-button matTooltip="Login for Donors to see profile of their sponsored couple"  
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['login']" routerLinkActive="active">
+                <span class="light">LOGIN</span></a>
+</button>
+<button mat-button matTooltip="Mession and Objectives of JAVS" 
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['about']" routerLinkActive="active">
+                <span class="light">ABOUT</span></a>
+</button>
+<button mat-button matTooltip="Meet Vatsalyam Torchbearers" 
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['contact']" routerLinkActive="active">
+                <span class="light">CONTACT</span></a>
+</button>
+<button mat-button matTooltip="Vatsalyam Requires Money! Be Generous" 
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['donate']" routerLinkActive="active">
+                <span class="light">DONATE</span></a>
+</button>
+<button mat-button matTooltip="Vatsalyam rests on the strong shoulders of these great souls" 
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['mentors']" routerLinkActive="active">
+                <span class="light">MENTORS</span></a>
+</button>
+<button mat-button matTooltip="Vatsalyam Video" 
+matTooltipClass="tooltip-pd" matTooltipPosition="below">
+        <a [routerLink]="['video']" routerLinkActive="active">
+                <span class="light">VIDEO</span></a>
+</button>
+</mat-toolbar>
+
+</td></tr></table>
+<mat-toolbar class="mb" color="accent" *ngIf="this.isM">
+
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button 
+                >
+                        <a [routerLink]="['home']" routerLinkActive="active" class="mb1">
+                                <span matTooltip="Home" matTooltipClass="tooltip12"
+                                matTooltipPosition="left"
+                                class="lightmb">HOME</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button 
+                matTooltip="Login" matTooltipPosition="below">
+                        <a [routerLink]="['login']" routerLinkActive="active" class="mb1">
+                                <span class="lightmb">LOGIN</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button>
+                        <a [routerLink]="['about']" routerLinkActive="active" class="mb1">
+                                <span class="lightmb">ABOUT</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button>
+                        <a [routerLink]="['contact']" routerLinkActive="active" class="mb1">
+                                <span class="lightmb">CONTACT</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button>
+                        <a [routerLink]="['donate']" routerLinkActive="active" class="mb1">
+                                <span class="lightmb">DONATE</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+                <button mat-button mat-icon-button>
+                        <a [routerLink]="['details']" routerLinkActive="active" class="mb1">
+                                <span class="lightmb">DETAILS</span></a>
+                </button>
+        </mat-toolbar-row>
+        <mat-toolbar-row>
+        <button mat-button mat-icon-button>
+                <a [routerLink]="['mentors']" routerLinkActive="active" class="mb1">
+                <span class="lightmb">MENTORS</span></a>
+</button>
+</mat-toolbar-row>
+</mat-toolbar>
+        
+
+<!--<app-page></app-page>-->
+<router-outlet></router-outlet>

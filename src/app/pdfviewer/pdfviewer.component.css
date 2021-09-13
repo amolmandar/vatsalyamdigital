@@ -1,0 +1,13 @@
+
+.pdf-container1{
+    height:"80%";
+    width:"80%";
+    margin: "0%";
+    overflow: auto;
+    display: block !important;
+}
+.dialog-responsive {
+    width: 40%;
+}
+
+

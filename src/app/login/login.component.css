@@ -1,0 +1,34 @@
+
+.example-container{
+    text-align: center
+}
+.lcap{
+    width:100%;
+    display: inline-block;
+    /* border:1px solid ; */
+    color: royalblue;
+}
+.fbcap{
+    display: inline-block;
+    /* border:1px solid ; */
+    color: green;
+    /* border:1px solid green; */
+}
+.form-container{
+    width: 400 px; 
+    margin: 0 px auto; 
+    margin-top: 200 px;
+    border: 4px solid royalblue;
+    padding: 4px;
+}
+
+.form-field{
+    display: block
+}
+.pdf-container{
+    height: 100%;
+    width:100%;
+}
+table, th, td {
+    border: 2px solid blue;
+  }

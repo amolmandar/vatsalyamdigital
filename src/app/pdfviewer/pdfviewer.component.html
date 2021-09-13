@@ -1,0 +1,29 @@
+
+
+<mat-dialog-content >
+  <table>
+    <!-- <tr><th>Name</th><th>Email</th></tr> -->
+    <tr>
+        <td>Wel-come {{data['name']}} </td>
+        <td>{{data['email']}}</td>
+        <td><button mat-raised-button color="primary" (click)="close()">Close</button></td>
+      </tr>
+  </table> 
+  <div>Profile of the beneficiary you currently sponsor</div>
+    <div class="pdf-container1"  >
+        <ngx-extended-pdf-viewer [src]="fileName"
+          [useBrowserLocale]="true" 
+          [textLayer]="true" 
+          [showHandToolButton]="true" 
+          [zoom]="'page-width'"
+          
+          >
+        </ngx-extended-pdf-viewer>
+    </div>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="mat-raised-button" color="primary" (click)="close()">Close</button>
+    <!-- <button class="mat-raised-button mat-primary"(click)="save()">Save</button> -->
+</mat-dialog-actions>
