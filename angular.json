@@ -47,13 +47,18 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": {
+                "scripts": true,
+                "styles": true,
+                "fonts": false
+              },
               "outputHashing": "all",
               "sourceMap": false,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              
               "budgets": [
                 {
                   "type": "initial",
@@ -62,8 +67,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "7kb",
-                  "maximumError": "20kb"
+                  "maximumWarning": "70kb",
+                  "maximumError": "1000kb"
                 }
               ]
             }

@@ -280,9 +280,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                 </vg-controls> -->
               <table><tr><td colspan=2>
                 <video #media  controls preload="auto"  class="video" (ended)="endVideo()"
-                poster="../../assets/vatsalyamlogo.jpg">
+                poster="assets/vatsalyamlogo.jpg">
                     
-                    <source src="../../assets/vatsalyamadkinnar.mp4" 
+                    <source src="assets/vatsalyamadkinnar.mp4" 
                     type="video/mp4">
                 </video>
                 </td>
@@ -401,19 +401,23 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
             <mat-grid-list cols="4" rowHeight="2:5" gutterSize="15px">
                 <span matTooltip="Shri Prabodh C Vekahnde who 
                 heads the organization and under whose leadership Vatsalyam is taking shape"
-                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com">
+                matTooltipClass="tooltip-pd" 
+                matTooltipPosition="above" 
+                title="javsnagpur@gmail.com">
                 <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
                     <mat-grid-tile-header><h2>President</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/pcv1.jpg" height=110 width=600>
+                    <img class="cover" src="assets/pcv1.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>p c v</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
                 <span matTooltip="Shri Mukunda P Uiekey founder of JAVS "
-                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                matTooltipClass="tooltip-pd" 
+                matTooltipPosition="above" 
+                title="javsnagpur@gmail.com"
                 >
                 <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
                     <mat-grid-tile-header><h2>Vice President</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/mukunda.jpg" height=110 width=600>
+                    <img class="cover" src="assets/mukunda.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>m p u</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
@@ -424,44 +428,62 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                 >
                 <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
                     <mat-grid-tile-header><h2>Secretary</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/deepak.jpg" height=110 width=600>
+                    <img class="cover" src="assets/deepak.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>d b t</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
             
             <span matTooltip="Shri Rohit K Dake  ensures timely fund allotment to all 
-            projects of JAVS. He additioanlly takes care of VrudhhaUdarak and GranthaUdarak
-             projects under which JAVS supports elderly senior citizens and 
-             maintains collection of unique & good library of books for needy people."
+            projects of JAVS. "
             matTooltipClass="tooltip-pd" matTooltipPosition="right" title="javsnagpur@gmail.com"
             >
                 <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
                     <mat-grid-tile-header><h2>Treasurer</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/rohit.jpg" height=110 width=600>
+                    <img class="cover" src="assets/rohit.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>r k d</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
+                <span matTooltip="Sou Dr Smita Mahesh Chaturvedi is chief medical officer 
+                of Vatsalyam project. She has over 30 years of proficiency in medical profession. 
+                She did MBBS from Delhi university and currently runs a clinic at Nagpur."
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                >
                 <mat-grid-tile [style.border]='getImgBorder()' class="imgbig">
                     <mat-grid-tile-header><h2>Gynae cologist</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/dr.smita.jpg" height=110 width=600>
+                    <img class="cover" src="assets/dr.smita.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>s m c</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
+                </span>
+                <span matTooltip="Sou Namita Parkhi is chief of support staff of vatsalyam project. "
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                >
                 <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
                     <mat-grid-tile-header><h2>Project Manager</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/namita.jpg" height=110 width=600>
+                    <img class="cover" src="assets/namita.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>n p</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
+                </span>
+                <span matTooltip="Sou Kiran Singh is responsible for maintaining our 
+                Janaushadhi Medical store.  "
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                >
                 <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
                     <mat-grid-tile-header><h2>Pharmacist</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/kiran.jpg" height=110 width=600>
+                    <img class="cover" src="assets/kiran.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>k c s</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
+                </span>
+                <span matTooltip="Mandar is youngest in the Vatsalyam team. He is responsible for all 
+                digitalization of Vatsalyam. 
+                This site is came into existence because of his constant efforts. "
+                matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
+                >
                 <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
                     <mat-grid-tile-header><h2>Web Organizer</h2></mat-grid-tile-header>
-                    <img class="cover" src="../../assets/mandar.jpg" height=110 width=600>
+                    <img class="cover" src="assets/mandar.jpg" height=110 width=600>
                     <mat-grid-tile-footer><h2>m p v</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
-                
+                </span>
               </mat-grid-list>
         </div>
 
