@@ -394,7 +394,7 @@ const EmpData1 : Employee[] =[{
   "Summary": "On 06-Sep-2018 delivered a Female child @GMC Ngp Hospital wt 2.6 Kg"
 }, {
   "Id": 40,
-  "FirstName": "ANJALI",
+  "FirstName": "Sou Anjali",
   "LastName": "Thakre",
   "Phone": "9096430284 ",
   "Adhar": "480496410634",
@@ -431,7 +431,7 @@ const EmpData3 : Employee[] =[{
   "LastName": "Badel",
   "Phone": "7028883169 ",
   "Adhar": "330242625942",
-  "Sponsor":"Sou Sinita Jejani",
+  "Sponsor":"Sou Sunita Jejani",
   "Summary": "On 19-Dec-2018 delivered a Female child @Disha Clinic Ngp Hospital wt 2.4 Kg"
 }, {
   "Id": 45,
@@ -439,7 +439,7 @@ const EmpData3 : Employee[] =[{
   "LastName": "Yerpude",
   "Phone": "9579964872 ",
   "Adhar": "288566174654",
-  "Sponsor":"Sou Laxman Vikas",
+  "Sponsor":"Laxman Vikas",
   "Summary": "On 16-Jul-2018 Abortion advised as baby's heart beats stopped after 7 weeks"
 }, {
   "Id": 46,
@@ -516,7 +516,7 @@ const EmpData3 : Employee[] =[{
   "Summary": "On 09-Apr-2019 delivered a Female child @Disha Clinic Ngp Hospital wt 2.3 Kg"
 } , {
   "Id": 55,
-  "FirstName": "Sou jyoti",
+  "FirstName": "Sou Jyoti",
   "LastName": "Sirsat",
   "Phone": "881797182",
   "Adhar": "962664077369",
@@ -844,7 +844,9 @@ const EmpData4 : Employee[] =[{
   "Phone": "9156905707 ",
   "Adhar": "278591836217",
   "Sponsor":"Shri Vipin Modak",
-  "Summary": "Had last routine check up on 13-Aug-2021. Is advised to take rest as much as possible. "
+  "Summary": `Had last routine check up on 13-Aug-2021. Is advised to 
+  take rest as much as possible. Finally Baby was delivered on 6th Sep 2021. 
+  Both Mother and new born are safe and doing well. Was provided with essential kit. `
 }, {
   "Id": 96,
   "FirstName": "Sou Payal",
@@ -876,7 +878,9 @@ const EmpData4 : Employee[] =[{
   "Phone": "9850248180 ",
   "Adhar": "601358952755",
   "Sponsor":"Swargiya Shyamrao Ingole",
-  "Summary": "Had last routine check up on  09-Aug-2021. She has gained weight and doing well.  "
+  "Summary": `Had last routine check up on  09-Aug-2021. 
+  She has gained weight and doing well. Delivered baby Boy on 24th sep 2021. 
+  Both mother and child are safe.`
 }, {
   "Id": 100,
   "FirstName": "Sou Indu",

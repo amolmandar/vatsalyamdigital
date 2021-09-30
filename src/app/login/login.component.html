@@ -40,9 +40,10 @@
   </div>
 <div *ngIf="this.name.length">
       <div ><h3>
-          Thanks a lot <h2>{{this.name}}</h2>. Vatsalyam requires more such donors.
+          Thanks a lot <span class="nm1">{{this.name}}</span>. Vatsalyam requires more such donors.
           Please feel free to drop a word about your expirence with Vatsalyam.
           </h3>
+          <div *ngIf="fdBack" class="nm1">Thanks a lot for your Feed Back. Will contact soon!!!</div>
       </div>
       <div class="example-container">
         

@@ -74,8 +74,18 @@ pdfFileName;
     //console.log(this.resData);
   }
   len=0;
+  fdBack=false;
   submitFeedback(){
-    this.feedbackForm.reset();
+    if (!this.feedbackForm.valid) {
+      return;
+    }
+    //this.feedbackForm.reset();
+    this.fdBack=true;
+    this.databaseService.getMail(this.feedbackForm.value).subscribe((data)=>{
+      this.resData=data;
+      this.feedbackForm.reset();
+      
+    });
   }
   submit() {
     if (!this.loginForm.valid) {

@@ -47,6 +47,99 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
 </mat-toolbar>
 
 </td></tr></table>
+
+<mat-sidenav-container *ngIf="this.isM" autosize>
+        <mat-sidenav mode="over" #sidenav  position="start" >
+                
+                <div>
+                <mat-toolbar class="side">
+                        <p><button mat-button (click)="sidenav.toggle()">Vatsalyam</button></p>
+                        <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                        
+                                <a [routerLink]="['home']" routerLinkActive="active" class="mb1">
+                                        <span matTooltip="Home" matTooltipClass="tooltip12"
+                                                matTooltipPosition="left"
+                                                class="lightmb" >Home</span>
+                                </a>
+                                
+                        </button>
+                         </mat-toolbar-row>
+                         <mat-toolbar-row>     
+                        <button mat-button mat-icon-button (click)="sidenav.close()"
+                                matTooltip="Login" matTooltipPosition="below">
+                                <a [routerLink]="['login']" routerLinkActive="active" class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Login</span>
+                                </a>
+                        </button>
+                        </mat-toolbar-row>
+                        <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['about']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">About</span>
+                                </a>
+                        </button>
+                        </mat-toolbar-row>
+                        <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['contact']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Contact</span>
+                                </a>
+                        </button>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['donate']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Donate</span>
+                                </a>
+                        </button>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['details']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Details</span>
+                                </a>
+                        </button>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['mentors']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Mentors</span>
+                                </a>
+                        </button>
+                </mat-toolbar-row>
+                <mat-toolbar-row>
+                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                                <a [routerLink]="['video']" routerLinkActive="active" 
+                                        class="mb1">
+                                        <span class="lightmb" (click)="sidenav.close()">Video</span>
+                                </a>
+                        </button>
+                </mat-toolbar-row>
+                </mat-toolbar>
+                
+                </div>
+        </mat-sidenav>
+        <mat-sidenav-content class="">
+                <div class="tblbar2 mat-elevation-z8" >
+                        
+                                <button mat-icon-button (click)="sidenav.toggle()">
+                                        <mat-icon>menu</mat-icon>
+                                </button>
+                         
+                                <span class="toolbar-spacer"></span>
+                                <router-outlet></router-outlet>
+                        
+                </div> 
+        </mat-sidenav-content>
+</mat-sidenav-container>
+<router-outlet></router-outlet>
+<!-- 
 <mat-toolbar class="mb" color="accent" *ngIf="this.isM">
 
         <mat-toolbar-row>
@@ -55,48 +148,48 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         <a [routerLink]="['home']" routerLinkActive="active" class="mb1">
                                 <span matTooltip="Home" matTooltipClass="tooltip12"
                                 matTooltipPosition="left"
-                                class="lightmb">HOME</span></a>
+                                class="lightmb">Home</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
                 <button mat-button mat-icon-button 
                 matTooltip="Login" matTooltipPosition="below">
                         <a [routerLink]="['login']" routerLinkActive="active" class="mb1">
-                                <span class="lightmb">LOGIN</span></a>
+                                <span class="lightmb">Login</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
                 <button mat-button mat-icon-button>
                         <a [routerLink]="['about']" routerLinkActive="active" class="mb1">
-                                <span class="lightmb">ABOUT</span></a>
+                                <span class="lightmb">About</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
                 <button mat-button mat-icon-button>
                         <a [routerLink]="['contact']" routerLinkActive="active" class="mb1">
-                                <span class="lightmb">CONTACT</span></a>
+                                <span class="lightmb">Contact</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
                 <button mat-button mat-icon-button>
                         <a [routerLink]="['donate']" routerLinkActive="active" class="mb1">
-                                <span class="lightmb">DONATE</span></a>
+                                <span class="lightmb">Donate</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
                 <button mat-button mat-icon-button>
                         <a [routerLink]="['details']" routerLinkActive="active" class="mb1">
-                                <span class="lightmb">DETAILS</span></a>
+                                <span class="lightmb">Details</span></a>
                 </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
         <button mat-button mat-icon-button>
                 <a [routerLink]="['mentors']" routerLinkActive="active" class="mb1">
-                <span class="lightmb">MENTORS</span></a>
+                <span class="lightmb">Mentors</span></a>
 </button>
 </mat-toolbar-row>
-</mat-toolbar>
+</mat-toolbar> -->
         
 
 <!--<app-page></app-page>-->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->

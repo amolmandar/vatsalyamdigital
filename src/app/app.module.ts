@@ -32,6 +32,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 // import {MatGridListModule} from '@angular/material/grid-list';
 //import { VgCoreModule } from 'videogular2/compiled/core';
 //import { VgControlsModule } from 'videogular2/compiled/controls';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -49,11 +51,13 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCardModule,
+    MatIconModule,
     MatToolbarModule,
     MatTooltipModule,
     AppRoutingModule,
     FlexLayoutModule,
     MatSliderModule,
+    MatSidenavModule,
     MatGridListModule,
     MatPaginatorModule,
     MatTableModule,

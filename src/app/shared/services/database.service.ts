@@ -22,4 +22,7 @@ export class DatabaseService {
     getDonor(data) : Observable<any>{
             return this.http.get(this.url+'/api/user',{params:data});
     }
+    getMail(data):Observable<any>{
+        return this.http.get(this.url+'/api/mail',{params:data});
+    }
 }

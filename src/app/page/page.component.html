@@ -310,10 +310,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
         <div  *ngIf="page.title==='JAVS Online Bank Payments Options'">  
             <table ><tr><th>Acct Name:</th><th class="bnk">Jangoraitad Adivasi Vikas Sanstha</th></tr></table>
             <ul class="bnk">
-                <span matTooltip="Bank Name:State Bank Of India. 
-                Account No:35225435926
-                IFS Code:SBIN0070602" matTooltipPosition="above" title="javsnagpur@gmail.com"
-                matTooltipClass="tooltip-pd">
+                <span  title="javsnagpur@gmail.com">
                     <li >
                         <span >Bank Name:</span>
                         <span class="bnk">{{page.content.sbi.Bank}}</span>
@@ -328,10 +325,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     </li>
                 </span>
                     <div><hr></div>
-                <span matTooltip="Bank Name:Axis Bank Ltd.
-                Account No:916010016242644
-                IFS Code:UTIB0001828" matTooltipClass="tooltip-pd" title="javsnagpur@gmail.com"
-                matTooltipPosition="right">
+                <span  title="javsnagpur@gmail.com">
                     <li>
                         <span 
                         >Bank Name:</span>
@@ -347,11 +341,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     </li>
                 </span>
                     <div><hr></div>
-                <span matTooltipClass="tooltip-pd"
-                matTooltipPosition="below"
-                matTooltip="Bank Name:RBL Bank Ltd
-                Account No:309002377197
-                IFS Code:RATN0000163" title="javsnagpur@gmail.com" >
+                <span  title="javsnagpur@gmail.com" >
                     <li>
                         <span 
                         >Bank Name:</span>
@@ -464,14 +454,14 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         >s m c</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
-                <span matTooltip="Sou Namita Parkhi is chief of support staff of vatsalyam project. "
+                <span matTooltip="Sou Namita Sameer Parkhi is chief of support staff of vatsalyam project. "
                 matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
                 >
                 <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
                     <mat-grid-tile-header><h2>Project Manager</h2></mat-grid-tile-header>
                     <img class="cover" src="assets/namita.jpg" height=110 width=600>
-                    <mat-grid-tile-footer><h2 matTooltip="Sou Namita Parkhi" matTooltipClass="tooltip-pd"
-                        >n p</h2></mat-grid-tile-footer>
+                    <mat-grid-tile-footer><h2 matTooltip="Sou Namita Sameer Parkhi" matTooltipClass="tooltip-pd"
+                        >n s p</h2></mat-grid-tile-footer>
                 </mat-grid-tile>
                 </span>
                 <span matTooltip="Sou Kiran Singh is responsible for maintaining our 
@@ -525,7 +515,8 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                                 </span>
                         </mat-grid-tile-footer>
                     </mat-grid-tile>
-                    </span><div></div><div></div>
+                    </span>
+                    <div></div><div></div>
                     <span matTooltip="{{page.content.sayali.comment}}"
                     matTooltipClass="tooltip-pd" matTooltipPosition="right">
                     <mat-grid-tile colspan="2" rowspan=1
@@ -541,7 +532,26 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                                 </span>
                         </mat-grid-tile-footer>
                     </mat-grid-tile>
-                    </span><div></div><div></div>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.kiranmundhara.comment}}"
+                    matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                    <mat-grid-tile colspan="2" rowspan=1
+                    [style.border]='getImgBorder1()' class="mgt">
+                    
+                        <img class="cover1" src="{{page.content.kiranmundhara.img}}">
+                    
+                        <mat-grid-tile-footer>
+                            <span>{{page.content.kiranmundhara.name1}}</span>
+                                <span>
+                                   {{ page.content.kiranmundhara.place}}
+
+                                </span>
+                        </mat-grid-tile-footer>
+                    </mat-grid-tile>
+                    </span>
+                    
+                    <div></div><div></div>
                     <span matTooltip="{{page.content.vinay.comment}}"
                         matTooltipClass="tooltip-pd" matTooltipPosition="right">
                         <mat-grid-tile colspan="2" rowspan=1
@@ -710,7 +720,40 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                             </mat-grid-tile-footer>
                         </mat-grid-tile>
                     </span>
-            
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.khodaskar.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.khodaskar.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.khodaskar.name1}}</span>
+                                <span>
+                                   {{ page.content.khodaskar.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
+                    <div></div><div></div>
+                    <span matTooltip="{{page.content.sarang.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="above">
+                        <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
+                        >
+                            
+                            <img class="cover172" src="{{page.content.sarang.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.sarang.name1}}</span>
+                                <span>
+                                   {{ page.content.sarang.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span>
 
 
         </mat-grid-list>
@@ -727,19 +770,19 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
             <h3><span color="accent"> Vatsalyammm Summary</span></h3>
             <ul class="nav nav-pills nav-fill gray" >
                 <li [class.active]="viewMode=='2015'"  class="nav-link active">
-                    <a  (click)="viewMode='2015'"><span class="vat">Vat1</span></a>
+                    <a  (click)="viewMode='2015'"><span class="vat">Year1</span></a>
                 </li>
                 <li [class.active]="viewMode=='2016'"  class="nav-link">
-                    <a  (click)="viewMode='2016'"><span class="vat">Vat2</span></a>
+                    <a  (click)="viewMode='2016'"><span class="vat">Year2</span></a>
                 </li>
                 <li [class.active]="viewMode=='2017'"  class="nav-link">
-                    <a  (click)="viewMode='2017'"><span class="vat">Vat3</span></a>
+                    <a  (click)="viewMode='2017'"><span class="vat">Year3</span></a>
                 </li>
                 <li [class.active]="viewMode=='2018'"  class="nav-link">
-                    <a  (click)="viewMode='2018'"><span class="vat">Vat4</span></a>
+                    <a  (click)="viewMode='2018'"><span class="vat">Year4</span></a>
                 </li>
                 <li [class.active]="viewMode=='2019'"  class="nav-link">
-                    <a  (click)="viewMode='2019'"><span class="vat">Vat5</span></a>
+                    <a  (click)="viewMode='2019'"><span class="vat">Year5</span></a>
                 </li>
             </ul>
             <div [ngSwitch]="viewMode" class="nav-justified nav-fill 

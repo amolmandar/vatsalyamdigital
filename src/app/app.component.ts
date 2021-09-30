@@ -10,6 +10,7 @@ import 'hammerjs';
 })
 export class AppComponent {
   title = 'Vatsalyam';
+  hide:boolean = false;
   scrHeight;
   scrWidth;
   isM:boolean;

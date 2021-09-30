@@ -345,7 +345,30 @@ or indirectly are received. We request donors to adopt one or more couple for th
   'comment':`Narendra Bhagdikar is Dubai based NRI . He is associated  with JAVS since long. 
    `,
   'img':'assets/naren1.jpg'
+},
+'khodaskar':{
+  'name1': 'Raja Khodaskar',
+  'place':'Nagpur M S',
+  'comment':`Raja Khodaskar is first generation quality management consultant. He is associated  with JAVS since long. 
+   `,
+  'img':'assets/khodaskar.jpg'
+},
+'sarang':{
+  'name1': 'Sarang Joshi',
+  'place':'Nagpur M S',
+  'comment':`Sarang Joshi is senior manager at Mahindra & Mahindra. He is associated  with JAVS since long. 
+   `,
+  'img':'assets/sarang.jpg'
+},'kiranmundhara':{
+  'name1': 'Sou Kiran Mundhara',
+  'place':'Nagpur M S',
+  'comment':`Sou Kiran Mundhara  is well known social worker in Nagpur. 
+  She is associated with many social organization and heads Tejasvini Mahila Mancha.
+  She is associated  with JAVS since last few years. 
+   `,
+  'img':'assets/souKiranMundhara.jpg'
 }
+
       
           
       },
