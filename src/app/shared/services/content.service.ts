@@ -367,6 +367,17 @@ or indirectly are received. We request donors to adopt one or more couple for th
   She is associated  with JAVS since last few years. 
    `,
   'img':'assets/souKiranMundhara.jpg'
+},'manapure':{
+  'name1': 'Nishant Manapure',
+  'place':'Nagpur M S',
+  'comment':`Prof. Nishant H. MANAPURE is the Principal at 
+  Priyadarshini Institute of Architecture and Design Studies, Nagpur. 
+  A graduate of  Sir J.J. College of Architecture, Mumbai and M.Arch. (Urban Design) 
+  from School of Planning and Architecture, New Delhi, he is primarily been in the field of 
+  Architectural Education for the past 28 years.
+He is associated  with JAVS since its intial years. 
+   `,
+  'img':'assets/manapure.jpg'
 }
 
       

@@ -569,6 +569,23 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                             </mat-grid-tile-footer>
                         </mat-grid-tile>
                     </span><div></div><div></div>
+                    <span matTooltip="{{page.content.manapure.comment}}"
+                        matTooltipClass="tooltip-pd" matTooltipPosition="right">
+                        <mat-grid-tile colspan="2" rowspan=1
+                        [style.border]='getImgBorder1()' class="mgt" 
+                        >
+                            
+                            <img class="cover1" src="{{page.content.manapure.img}}">
+                        
+                            <mat-grid-tile-footer>
+                                <span>{{page.content.manapure.name1}}</span>
+                                <span>
+                                   {{ page.content.manapure.place}}
+
+                                </span>
+                            </mat-grid-tile-footer>
+                        </mat-grid-tile>
+                    </span><div></div><div></div>
                     <span matTooltip="{{page.content.naren.comment}}"
                         matTooltipClass="tooltip-pd" matTooltipPosition="right">
                         <mat-grid-tile colspan="2" rowspan=1
