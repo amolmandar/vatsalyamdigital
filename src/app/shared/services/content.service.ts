@@ -8,8 +8,8 @@ export class ContentService {
   pages:Object ={
     'home': {
       "title": 'Jangoraitad Adivasi Vikas Sanstha (JAVS)', 
-      "subtitle": 'Welcome to Jangoraitad Adivasi Vilas Sanstha!', 
-      "content": [`Jangoraitad Adivasi Vikas Sansthan was formed in 
+      "subtitle": 'Welcome to Jangoraitad Adivasi Vikas Sanstha!', 
+      "content": [`Jangoraitad Adivasi Vikas Sanstha was formed in 
       the year 1989 and since then the Sanstha has been actively 
       involved  in the works of social welfare. 
       The Sanstha has evolved over a period of last 10 years with 
@@ -20,7 +20,7 @@ export class ContentService {
       well known Doctors, Pharmacist, Advocates, self run young Entrepreneurs, Officers 
       from Government offices, managers from private corporate etc. Overall team at Sanstha 
       is a good mix of experience, youth, enthusiasm and skills which are required to run 
-      the Sansthaan and execute projects for the well being of the society.`], 
+      the Sanstha and execute projects for the well being of the society.`], 
       "image": 'assets/1.jpg'
     },
     'about': {
@@ -31,7 +31,7 @@ export class ContentService {
             'para1':`
        Project is a home-grown 
       comprehensive health initiative formulated to tackle the challenges of maternal 
-      mortality and morbidity in Nagpur  Maharashtra State, India.
+      mortality and morbidity in Nagpur city Maharashtra State, India.
       It was initiated in 2015-16 by the Jangoraitad Adivasi Vikas Sanstha(JAVS) in response 
       to the Global Health Survey  which put Nagpur as having the not-so-good maternal and 
       child health indices in   central India. `

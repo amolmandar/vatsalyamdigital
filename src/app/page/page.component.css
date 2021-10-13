@@ -68,6 +68,7 @@ mat-grid-tile {
       /* border:2px solid; */
       font-family:'Padauk';
       font-size: large;
+      text-align: justify;
   }
   .abtpillar1s,.abtmod1el,.abtca1re{
     box-sizing: content-box;
@@ -209,7 +210,8 @@ transform: rotate(-90deg); */
     /* resize:both; */
     /* vertical-align:top;  */
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     right: 0;
     overflow-y: scroll;
     font-family: 'Padauk';
@@ -238,7 +240,8 @@ transform: rotate(-90deg); */
     /* word-spacing: 7em; */
     position: fixed;
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     font-family: 'Padauk';
     font-size: medium;
 }
@@ -288,15 +291,16 @@ transform: rotate(-90deg); */
 @media (min-width:320px) {
         /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
         .example-card{
-           width:95%;
+           width:99%;
            height:99%;
-           margin:10px; 
-           top:-10px; 
-           left:24px;
+           margin:1px; 
+           top:39px; 
+           left:0px;
            overflow:auto;
            position: fixed;
-           outline: 2px solid white;
-           background: rgba(194, 187, 206, 0.9);
+           /* outline: 2px solid white; */
+           /* background: rgba(194, 187, 206, 0.9); */
+           background:rgba(128, 151, 228, 0.3);
            
        } 
 
@@ -308,11 +312,12 @@ transform: rotate(-90deg); */
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
     .example-card{
         position:absolute;
-        top:4px;
+        top:24px;
         margin:5px;
-        width:95%;
+        width:99%;
         height:99%;
         left:24px;
+        background:rgba(128, 151, 228, 0.3);
        
    } 
    .tb15{
@@ -327,15 +332,16 @@ transform: rotate(-90deg); */
         /* portrait tablets, portrait iPad, landscape e-readers, 
         landscape 800x480 or 854x480 phones */ 
     .example-card{
-       width:95%;
+       width:99%;
        height:99%;
-       margin:10px; 
-       top:-10px; 
-       left:24px;
+       margin:1px; 
+       top:39px; 
+       left:0px;
        overflow:auto;
        position: fixed;
-       outline: 2px solid white;
-       background: rgba(194, 187, 206, 0.9);
+       /* outline: 2px solid white; */
+       /* background: rgba(194, 187, 206, 0.9); */
+       background:rgba(128, 151, 228, 0.3);
        
    } 
    .tb12{
@@ -379,7 +385,8 @@ transform: rotate(-90deg); */
     left:4%;
     position: fixed;
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     } 
     .example-card::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
@@ -399,7 +406,8 @@ transform: rotate(-90deg); */
         /* resize:both; */
         /* vertical-align:top;  */
         outline: 2px solid white;
-        background: rgba(194, 187, 206, 0.9);
+        /* background: rgba(194, 187, 206, 0.9); */
+        background:rgba(128, 151, 228, 0.3);
         right: 0;
         overflow-y: scroll;
     }
@@ -453,7 +461,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     left:0%;
     position: fixed;
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     } 
     .example-card::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
@@ -473,7 +482,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
         /* resize:both; */
         /* vertical-align:top;  */
         outline: 2px solid white;
-        background: rgba(194, 187, 206, 0.9);
+        /* background: rgba(194, 187, 206, 0.9); */
+        background:rgba(128, 151, 228, 0.3);
         right: 0;
         overflow-y: scroll;
     }
@@ -518,7 +528,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     left:0%;
     position: fixed;
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     } 
     .example-card::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
@@ -564,7 +575,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
         /* resize:both; */
         /* vertical-align:top;  */
         outline: 2px solid white;
-        background: rgba(194, 187, 206, 0.9);
+        /* background: rgba(194, 187, 206, 0.9); */
+        background:rgba(128, 151, 228, 0.3);
         right: 0;
         overflow-y: auto;
     }
@@ -617,7 +629,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     left:0%;
     position: fixed;
     outline: 2px solid white;
-    background: rgba(194, 187, 206, 0.9);
+    /* background: rgba(194, 187, 206, 0.9); */
+    background:rgba(128, 151, 228, 0.3);
     } 
     .flex-container{
         position: absolute;
@@ -632,7 +645,8 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
         /* resize:both; */
         /* vertical-align:top;  */
         outline: 2px solid white;
-        background: rgba(194, 187, 206, 0.9);
+        /* background: rgba(194, 187, 206, 0.9); */
+        background:rgba(128, 151, 228, 0.3);
         right: 0;
     }
     .flex-container::-webkit-scrollbar-track {

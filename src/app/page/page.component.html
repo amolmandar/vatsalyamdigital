@@ -18,7 +18,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
     <mat-card class="flex-container" fxFlex="79%" *ngIf="!this.getIsM()" >
         <mat-card-header>
             <mat-card-title>
-                <h2><span class="bnk"> Vatsalyam Summary </span></h2>
+                <h2><span class="bnk"> Vatsalyam Beneficiaries Summary </span></h2>
             </mat-card-title>
             <mat-card-subtitle>
     
@@ -279,7 +279,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     <vg-fullscreen></vg-fullscreen>
                 </vg-controls> -->
               <table><tr><td colspan=2>
-                <video #media  controls preload="auto"  class="video" (ended)="endVideo()"
+                <video #media   preload="auto"  class="video" (ended)="endVideo()"
                 poster="assets/vatsalyamlogo.jpg">
                     
                     <source src="assets/vatsalyamadkinnar.mp4" 
@@ -477,7 +477,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                 </span>
                 <span matTooltip="Mandar is youngest in the Vatsalyam team. He is responsible for all 
                 digitalization of Vatsalyam. 
-                This site is came into existence because of his constant efforts. "
+                This site  came into existence because of his constant efforts. "
                 matTooltipClass="tooltip-pd" matTooltipPosition="above" title="javsnagpur@gmail.com"
                 >
                 <mat-grid-tile [style.border]='getImgBorder()'class="imgbig">
@@ -783,9 +783,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
 <div *ngIf="this.getIsM() && page.title=='Details'" >
     <mat-card  class="example-card">
         
-        <mat-card-content class="gray">
-            <h3><span color="accent"> Vatsalyammm Summary</span></h3>
-            <ul class="nav nav-pills nav-fill gray" >
+        <mat-card-content class="">
+            <h3><span color="accent"> Vatsalyammm Beneficiaries Summary</span></h3>
+            <ul class="nav nav-pills vatbox" >
                 <li [class.active]="viewMode=='2015'"  class="nav-link active">
                     <a  (click)="viewMode='2015'"><span class="vat">Year1</span></a>
                 </li>
@@ -802,8 +802,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     <a  (click)="viewMode='2019'"><span class="vat">Year5</span></a>
                 </li>
             </ul>
-            <div [ngSwitch]="viewMode" class="nav-justified nav-fill 
-            nav ">
+            <div [ngSwitch]="viewMode" class="nav-justified1 nav-fill1 nav1 ">
                   <div *ngSwitchCase="'2015'">
                       
                       
