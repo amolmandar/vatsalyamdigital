@@ -53,13 +53,14 @@ html, body, app-root {
 .tooltip-pd {
   position:relative;
   padding: 0.738rem 1.113rem;
-  color: yellow !important;
+  color: black !important;
   margin-bottom: 5px;
   white-space: pre-line;
   width: 250px;
   height: auto;
   font-size: 0.9rem;
   background: rgb(235, 16, 16);;
+  /* background: rgba(128, 151, 228, 0.3);; */
   border-radius: 7px;
   margin-bottom: 3px;
   text-align: justify;
@@ -92,6 +93,7 @@ html, body, app-root {
   height: auto;
   font-size: 0.9rem;
   background: rgb(235, 16, 16);;
+  /* background: rgba(128, 151, 228, 0.3);; */
   border-radius: 7px;
   margin-bottom: 7px;
   /* left: -200px !important;

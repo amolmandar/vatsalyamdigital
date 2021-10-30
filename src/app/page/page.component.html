@@ -105,7 +105,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
     
     </mat-card>
     
-<mat-card class="example-card" *ngIf="page.title!='details'">
+<mat-card class="example-card" *ngIf="page.title!='Details'">
     <mat-card-header>
         <mat-card-title>
             <h1 class="vat">{{page.title}}</h1>
@@ -113,7 +113,13 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
         </mat-card-title>
         <mat-card-subtitle><h2 class="dta1">
             <span color="accent" class="subtitle">{{page.subtitle}}</span>
-        </h2></mat-card-subtitle>
+        </h2>
+        <span *ngIf="page.title=='About Vatsalyam'">
+            <div class="raisedbox">
+        <ng-image-slider [images]="imageObject" #nav></ng-image-slider>
+        </div>
+        </span>
+    </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
 
@@ -258,57 +264,123 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                 <loginform></loginform>
                 
         </div>
-        <div *ngIf="page.title=='Vatsalyam Video'">
-            <!-- <vg-player>
-                <vg-controls>
-                    <vg-play-pause></vg-play-pause>
-                    <vg-playback-button></vg-playback-button>
-              
-                    <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-              
-                    <vg-scrub-bar>
-                        <vg-scrub-bar-current-time></vg-scrub-bar-current-time>
-                        <vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
-                    </vg-scrub-bar>
-              
-                    <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-              
-                    <vg-mute></vg-mute>
-                    <vg-volume></vg-volume>
-              
-                    <vg-fullscreen></vg-fullscreen>
-                </vg-controls> -->
-              <table><tr><td colspan=2>
-                <video #media   preload="auto"  class="video" (ended)="endVideo()"
+        <div *ngIf="page.title=='Vatsalyam Videos'">
+            <mat-card class="vdo">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    
+                    <mat-card-title> Sou. Neha Atram</mat-card-title>
+                    <mat-card-subtitle>The Mother who is happy with her Triplets</mat-card-subtitle>
+                  </mat-card-header>
+                  <video #medianeha  controls preload="auto"  class="video" (ended)="endVideo()" 
+                  (click)="toggleVideoNeha()"
+                poster="assets/photoneha.jpg">
+                    
+                    <source src="assets/videotripletsneha.mp4" 
+                    type="video/mp4">
+                </video>
+                <mat-card-content>
+                    <p class="whattheysay">
+                      "I am alive only because of Vatsalyam!!! 
+                      With no resources at hand and three children pregnancy, it was impossible to manage.
+                      Thanks to Dr Chaturvedi and entire Vatsalyam team."
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button color="primary" (click)="toggleVideoNeha()">START</button>
+                    <button mat-button color="primary" (click)="pauseVideoNeha()">Pause</button>
+                  </mat-card-actions>
+            </mat-card>
+            <hr>
+            <mat-card class="vdo">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    
+                    <mat-card-title>Meet Sou. Payal</mat-card-title>
+                    <mat-card-subtitle>One of the proud mother</mat-card-subtitle>
+                  </mat-card-header>
+                  <video #mediapayal  controls preload="auto"  class="video" (ended)="endVideo()"
+                poster="assets/photopayal.jpg">
+                    
+                    <source src="assets/videopayal.mp4" 
+                    type="video/mp4">
+                </video>
+                <mat-card-content>
+                    <p>
+                      "This was my first child. I am fortunate to have support like Vatsalyam!!!
+                      Vatsalyam is just an extended family for underprivileged pregenant women"
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button color="primary" (click)="toggleVideoPayal()">START</button>
+                    <button mat-button color="primary" (click)="pauseVideoPayal()">Pause</button>
+                  </mat-card-actions>
+            </mat-card>
+            <hr>
+            <mat-card class="vdo">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    
+                    <mat-card-title>Meet Sou. Vidya Shahu</mat-card-title>
+                    <mat-card-subtitle>Survivor of complex pregency</mat-card-subtitle>
+                  </mat-card-header>
+                  <video #mediavidya  controls preload="auto"  class="video" (ended)="endVideo()"
+                poster="assets/photovidya.jpg">
+                    
+                    <source src="assets/videovidyashahu.mp4" 
+                    type="video/mp4">
+                </video>
+                <mat-card-content>
+                    <p>
+                      "Vatsalyam is the best NGO I have ever seen!!! They really help. No hidden agenda!!"
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button color="primary" (click)="toggleVideoVidya()">START</button>
+                    <button mat-button color="primary" (click)="pauseVideoVidya()">Pause</button>
+                  </mat-card-actions>
+            </mat-card>
+            <hr>
+            <mat-card class="vdo">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    
+                    <mat-card-title>Vatsalyam is Universal</mat-card-title>
+                    <mat-card-subtitle>Even for Others</mat-card-subtitle>
+                  </mat-card-header>
+                  <video #media  controls preload="auto"  class="video" (ended)="endVideo()"
                 poster="assets/vatsalyamlogo.jpg">
                     
                     <source src="assets/vatsalyamadkinnar.mp4" 
                     type="video/mp4">
                 </video>
-                </td>
-                </tr>
-                <tr>
-                <td><button mat-raised-button color="primary" (click)="toggleVideo()">Start Video</button>
-                </td><td align="right">
-                <button mat-raised-button color="primary" (click)="pauseVideo()">Pause Video</button>
-             <!-- </vg-player> -->
-             </td>
-             </tr>
-             <tr><td colspan=2>
-                 <div class="tagline" >You don’t have to be biological mother 
-                     to mother a child.
-                    </div>
-             </td></tr>
-             <tr><td colspan=2><span class="tagend" *ngIf="vOn">They have understood, now it is your turn </span>
-             </td></tr>
-             </table>
+                <mat-card-content>
+                    <p>
+                      You dont have to be biological mother to mother a child!! 
+                      Let the feeling of  Vatsalyam be gender neutral!!
+                    </p>
+                  </mat-card-content>
+                  <mat-card-actions>
+                    <button mat-button color="primary" (click)="toggleVideo()">START</button>
+                    <button mat-button color="primary" (click)="pauseVideo()">Pause</button>
+                  </mat-card-actions>
+            </mat-card>
+
              <hr>
              
 
         </div>
         
-        <div  *ngIf="page.title==='JAVS Online Bank Payments Options'">  
-            <table ><tr><th>Acct Name:</th><th class="bnk">Jangoraitad Adivasi Vikas Sanstha</th></tr></table>
+        <div  *ngIf="page.title==='JAVS Online Bank Payments Options'"> 
+            <span class="g8012a">JAVS is 80(G) & 12(A) compliant. 
+                Can accept money from Indian banks only.
+                Pl drop a mail after you transfer money in any of the account. </span>
+            <table>
+                <tr><th>Acct Name:</th><th class="bnk">
+                Jangoraitad Adivasi Vikas Sanstha</th>
+            </tr>
+            
+        </table>
             <ul class="bnk">
                 <span  title="javsnagpur@gmail.com">
                     <li >
@@ -493,7 +565,7 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
 
         <div *ngIf="page.title=='Vatsalyam Mentors'">
             <div class="bnk">
-            <span>Hover the image to know more about mentor</span>
+            <span>Click the image and  listen to what they say.....</span>
             </div>
                 <mat-grid-tile-header>
                     <h1>Vatsalyam Mentors</h1>
@@ -505,7 +577,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     [style.border]='getImgBorder1()' class="mgt" 
                     >
                         
-                        <img class="cover1" src="{{page.content.salinaa.img}}">
+                        <img class="cover1" src="{{page.content.salinaa.img}}"
+                        
+                        (click)="openDialog('salina')"
+                        >
                     
                         <mat-grid-tile-footer>
                             <span>{{page.content.salinaa.name1}}</span>
@@ -522,7 +597,8 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     <mat-grid-tile colspan="2" rowspan=1
                     [style.border]='getImgBorder1()' class="mgt">
                     
-                        <img class="cover1" src="{{page.content.sayali.img}}">
+                        <img class="cover1" src="{{page.content.sayali.img}}" 
+                        (click)="openDialog('sayali')">
                     
                         <mat-grid-tile-footer>
                             <span>{{page.content.sayali.name1}}</span>
@@ -539,7 +615,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     <mat-grid-tile colspan="2" rowspan=1
                     [style.border]='getImgBorder1()' class="mgt">
                     
-                        <img class="cover1" src="{{page.content.kiranmundhara.img}}">
+                        <img class="cover1" src="{{page.content.kiranmundhara.img}}"
+                        (click)="openDialog('kiran')"
+                        >
                     
                         <mat-grid-tile-footer>
                             <span>{{page.content.kiranmundhara.name1}}</span>
@@ -558,7 +636,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         [style.border]='getImgBorder1()' class="mgt" 
                         >
                             
-                            <img class="cover1" src="{{page.content.vinay.img}}">
+                            <img class="cover1" src="{{page.content.vinay.img}}"
+                            (click)="openDialog('vinay')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.vinay.name1}}</span>
@@ -575,7 +655,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         [style.border]='getImgBorder1()' class="mgt" 
                         >
                             
-                            <img class="cover1" src="{{page.content.manapure.img}}">
+                            <img class="cover1" src="{{page.content.manapure.img}}"
+                            (click)="openDialog('manapure')"
+                            
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.manapure.name1}}</span>
@@ -591,7 +674,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" rowspan=1
                         [style.border]='getImgBorder1()' class="mgt" 
                         >
-                        <img class="cover1" src="{{page.content.naren.img}}">
+                        <img class="cover1" src="{{page.content.naren.img}}"
+                        (click)="openDialog('naren')"
+                        
+                        >
                             <mat-grid-tile-footer>
                                 <span>{{page.content.naren.name1}}</span>
                                 <span>
@@ -606,7 +692,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover17" src="{{page.content.dhiraj.img}}">
+                            <img class="cover17" src="{{page.content.dhiraj.img}}"
+                            (click)="openDialog('dhiraj')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.dhiraj.name1}}</span>
@@ -624,7 +712,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                     [style.border]='getImgBorder1()' class="mgt" 
                     >
                         
-                        <img class="cover1" src="{{page.content.suraj.img}}">
+                        <img class="cover1" src="{{page.content.suraj.img}}"
+                        (click)="openDialog('suraj')"
+                        
+                        >
                     
                         <mat-grid-tile-footer>
                             <span>{{page.content.suraj.name1}}</span>
@@ -641,7 +732,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover171" src="{{page.content.ramesh.img}}">
+                            <img class="cover171" src="{{page.content.ramesh.img}}"
+                            (click)="openDialog('ramesh')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.ramesh.name1}}</span>
@@ -658,7 +751,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.vinod.img}}">
+                            <img class="cover172" src="{{page.content.vinod.img}}"
+                            (click)="openDialog('vinod')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.vinod.name1}}</span>
@@ -675,7 +770,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                         
-                            <img class="cover172" src="{{page.content.mahesh.img}}">
+                            <img class="cover172" src="{{page.content.mahesh.img}}"
+                            (click)="openDialog('pradhan')"
+                            
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.mahesh.name1}}</span>
@@ -692,7 +790,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.prasad.img}}">
+                            <img class="cover172" src="{{page.content.prasad.img}}"
+                            (click)="openDialog('prasad')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.prasad.name1}}</span>
@@ -709,7 +809,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.niraj.img}}">
+                            <img class="cover172" src="{{page.content.niraj.img}}"
+                            (click)="openDialog('niraj')"
+                            
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.niraj.name1}}</span>
@@ -726,7 +829,10 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.atul.img}}">
+                            <img class="cover172" src="{{page.content.atul.img}}"
+                            (click)="openDialog('atul')"
+                            
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.atul.name1}}</span>
@@ -743,7 +849,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.khodaskar.img}}">
+                        <img class="cover172" src="{{page.content.khodaskar.img}}"
+                        (click)="openDialog('raja')"
+                        >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.khodaskar.name1}}</span>
@@ -760,7 +868,9 @@ class="fullBg" [src]="page.image" *ngIf="!this.getIsM()">
                         <mat-grid-tile colspan="2" [style.border]='getImgBorder1()' class="mgt"
                         >
                             
-                            <img class="cover172" src="{{page.content.sarang.img}}">
+                            <img class="cover172" src="{{page.content.sarang.img}}"
+                            (click)="openDialog('sarang')"
+                            >
                         
                             <mat-grid-tile-footer>
                                 <span>{{page.content.sarang.name1}}</span>

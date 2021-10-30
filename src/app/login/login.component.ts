@@ -81,7 +81,8 @@ pdfFileName;
     }
     //this.feedbackForm.reset();
     this.fdBack=true;
-    this.databaseService.getMail(this.feedbackForm.value).subscribe((data)=>{
+    this.databaseService.getMail(this.feedbackForm.value)
+    .subscribe((data)=>{
       this.resData=data;
       this.feedbackForm.reset();
       

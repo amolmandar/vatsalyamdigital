@@ -1,0 +1,22 @@
+.ftr{
+    /* background-color: red; */
+    width:100%;
+        overflow: hidden;
+        border: 1px solid #ff1100;
+        clear: both;
+
+}
+.cls{
+    float: right;
+    /* display: inline-flex; */
+}
+.thanks{
+    width:100%;
+    font-size: larger !important;
+    color:blue;
+    display: flex;
+    background: chocolate;
+}
+.bdy{
+    background:rgba(128, 151, 228, 0.3);
+}

@@ -198,7 +198,7 @@ or indirectly are received. We request donors to adopt one or more couple for th
       'image': 'assets/1.jpg'
     },
     'video': {
-      'title': 'Vatsalyam Video', 
+      'title': 'Vatsalyam Videos', 
       'subtitle': ' ', 
       'content': [' '], 
       'image': 'assets/1.jpg'

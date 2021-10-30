@@ -29,6 +29,7 @@ mat-toolbar{
   /* text-align: center; */
   background-color: rgb(7, 207, 197);
   /* display:flex; */
+  height:6%;
   
   
 }
@@ -50,12 +51,14 @@ mat-toolbar{
   /* flex: 1 1 auto; 
   align-self: center;
   vertical-align: middle;*/
-  color:blue;
+  /* color:blue; */
   /* margin-right: 100px; */
-  margin-left: 150px;
-  font-size: large;
-padding-top: 9px;
-height:40px;
+  /* margin-left: 160px; */
+  /* font-size: large; */
+padding-top: 4px;
+height:10px;
+/* text-decoration:none !important; */
+/* background-image:url("favicon.ico"); */
 
 
 
@@ -112,6 +115,11 @@ mat-sidenav-container1 {
     /* text-align: center; */
     float: right;
     /* height:120px; */
+  }
+  .favicon{
+    float:left;
+    margin-left: 1px !important;
+
   }
   
   .mb {
@@ -188,13 +196,22 @@ mat-sidenav-container1 {
     text-decoration:none;
     
   }
+  .btn{
+    width:100%;
+    /* padding:3px; */
+    text-align: center;
+  text-decoration: none;
+  border:none;
+  }
   .lightmb{
     color:white;
-    font-size:medium;
+    font-size:13px;
+    font-size-adjust: 0.56;
     text-decoration:none;
-    text-align: left;
+    /* text-align: left; */
     left: 0;
     text-indent: 0in;
+    /* width:140%; */
     
   }
   .lightmb a:active {
@@ -207,9 +224,11 @@ mat-sidenav-container1 {
     font-size:xx-small;
     text-decoration:none;
     text-align: left;
-    left: 0;
-    text-indent: 0in;
+    left: -10px;;
+    /* text-indent: 0in; */
     float:left;
+    width:auto;
+
     
   }
   .mb1 a:active {

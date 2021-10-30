@@ -37,6 +37,7 @@ mat-grid-tile {
   .mgt{
     width: 100%;
     height: 30%;
+    cursor: pointer;
   }
   .video{
       width:100%;
@@ -160,6 +161,15 @@ transform: rotate(-90deg); */
     color:red;
     
 }
+.raisedbox { 
+    padding: 20px;
+    border: 3px solid #77aaff;
+    box-shadow:  -1px 1px #77aaff,
+         -2px 2px #77aaff,
+         -3px 3px #77aaff,
+         -4px 4px #77aaff,
+         -5px 5px #77aaff;
+}
 .fullBg {
     z-index:0;
     position: absolute;
@@ -239,7 +249,7 @@ transform: rotate(-90deg); */
     overflow:auto;
     /* word-spacing: 7em; */
     position: fixed;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     /* background: rgba(194, 187, 206, 0.9); */
     background:rgba(128, 151, 228, 0.3);
     font-family: 'Padauk';
@@ -384,7 +394,7 @@ transform: rotate(-90deg); */
     overflow:auto;
     left:4%;
     position: fixed;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     /* background: rgba(194, 187, 206, 0.9); */
     background:rgba(128, 151, 228, 0.3);
     } 
@@ -460,7 +470,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     overflow:auto;
     left:0%;
     position: fixed;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     /* background: rgba(194, 187, 206, 0.9); */
     background:rgba(128, 151, 228, 0.3);
     } 
@@ -527,7 +537,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     overflow-y:auto;
     left:0%;
     position: fixed;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     /* background: rgba(194, 187, 206, 0.9); */
     background:rgba(128, 151, 228, 0.3);
     } 
@@ -628,7 +638,7 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
     overflow:auto;
     left:0%;
     position: fixed;
-    outline: 2px solid white;
+    /* outline: 2px solid white; */
     /* background: rgba(194, 187, 206, 0.9); */
     background:rgba(128, 151, 228, 0.3);
     } 
@@ -678,7 +688,12 @@ and (-webkit-min-device-pixel-ratio: 1.5) { */
 mat-grid-tile {
     background: lavender;
 }
-
+mat-card-content > p {
+    font-family:'Padauk' !important;
+    font-style: italic !important;
+    font-size: large !important;
+    color: blue;
+}
 
 .subtitle{
     
@@ -695,6 +710,14 @@ ul.bnk1{
     padding: 4; /* Remove padding */
     margin: 2; /* Remove margins */
     font-size:large;
+    list-style-type: none;
+    font-family: Padauk;
+  }
+  .g8012a{
+    color:red;
+    padding: 4; /* Remove padding */
+    margin: 2; /* Remove margins */
+    font-size:small;
     list-style-type: none;
     font-family: Padauk;
   }

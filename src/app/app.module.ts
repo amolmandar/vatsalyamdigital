@@ -34,7 +34,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 //import { VgControlsModule } from 'videogular2/compiled/controls';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +70,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatCheckboxModule,
     NgxExtendedPdfViewerModule,
     MatDialogModule,
-    MatGridListModule
+    MatGridListModule,
+    NgImageSliderModule
    // VgCoreModule,
     //VgControlsModule
    

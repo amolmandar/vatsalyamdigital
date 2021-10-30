@@ -42,7 +42,7 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
 <button mat-button matTooltip="Vatsalyam Video" 
 matTooltipClass="tooltip-pd" matTooltipPosition="below">
         <a [routerLink]="['video']" routerLinkActive="active">
-                <span class="light">VIDEO</span></a>
+                <span class="light">VIDEOS</span></a>
 </button>
 </mat-toolbar>
 
@@ -56,7 +56,7 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                 <mat-toolbar class="side">
                         <p></p>
                         <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()" class="btn">
                                         
                                 <a [routerLink]="['home']" routerLinkActive="active" class="mb1">
                                         <span matTooltip="Home" matTooltipClass="tooltip12"
@@ -67,7 +67,7 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                          </mat-toolbar-row>
                          <mat-toolbar-row>     
-                        <button mat-button mat-icon-button (click)="sidenav.close()"
+                        <button mat-button  (click)="sidenav.close()"
                                 matTooltip="Login" matTooltipPosition="below">
                                 <a [routerLink]="['login']" routerLinkActive="active" class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">Login</span>
@@ -75,7 +75,10 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                         </mat-toolbar-row>
                         <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="About" matTooltipPosition="below"
+                        
+                        >
                                 <a [routerLink]="['about']" routerLinkActive="active" 
                                         class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">About</span>
@@ -83,7 +86,10 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                         </mat-toolbar-row>
                         <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="Contact" matTooltipPosition="below"
+                        
+                        >
                                 <a [routerLink]="['contact']" routerLinkActive="active" 
                                         class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">Contact</span>
@@ -91,7 +97,10 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="Donate" matTooltipPosition="below"
+                        
+                        >
                                 <a [routerLink]="['donate']" routerLinkActive="active" 
                                         class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">Donate</span>
@@ -99,7 +108,9 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="Details of Vatsalyam Beneficiaries" matTooltipPosition="below"
+                        >
                                 <a [routerLink]="['details']" routerLinkActive="active" 
                                         class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">Details</span>
@@ -107,7 +118,9 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="Know our Mentors" matTooltipPosition="below"
+                        >
                                 <a [routerLink]="['mentors']" routerLinkActive="active" 
                                         class="mb1">
                                         <span class="lightmb" (click)="sidenav.close()">Mentors</span>
@@ -115,10 +128,12 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                         </button>
                 </mat-toolbar-row>
                 <mat-toolbar-row>
-                        <button mat-button mat-icon-button (click)="sidenav.close()">
+                        <button mat-button  (click)="sidenav.close()"
+                        matTooltip="You dont have to be biological mother to mother a child" matTooltipPosition="below"
+                        >
                                 <a [routerLink]="['video']" routerLinkActive="active" 
                                         class="mb1">
-                                        <span class="lightmb" (click)="sidenav.close()">Video</span>
+                                        <span class="lightmb" (click)="sidenav.close()">Videos</span>
                                 </a>
                         </button>
                 </mat-toolbar-row>
@@ -133,10 +148,14 @@ matTooltipClass="tooltip-pd" matTooltipPosition="below">
                                         <mat-icon class="vatsalyam">menu</mat-icon>
                                             
                                 </button>
-                                <a [routerLink]="['home']" routerLinkActive="active" >
+                                <a [routerLink]="['home']" routerLinkActive="active"  
+                                class="vatsalyam1">
+                                        
                                 <span 
-                                        class="vatsalyam1">Vatsalyam</span> 
+                                        ><img class="favicon1" src='assets/vatsalyampng1.png'></span> 
+                                
                                 </a> 
+                                 
                                 <span class="toolbar-spacer" (click)="sidenav.close()">
                                 <router-outlet ></router-outlet></span>
                 </div>
